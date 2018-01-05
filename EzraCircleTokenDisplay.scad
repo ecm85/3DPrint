@@ -3,7 +3,7 @@ height = 4;
 tokenHeight = 2.7;
 tokenDiameter = 16;
 notchHeight = 3;
-notchDiameter = 7;
+notchDiameter = 11;
 notchOffset = 6.3;
 
 rowsOfCircles = 5;
@@ -11,7 +11,7 @@ columnsOfCircles = 4; //must be even
 
 spaceBetweenCircles = 1;
 extraSpaceBetweenRows = 3;
-spaceFromSide = 3;
+spaceFromSide = 6;
 extraPaddingForMagnet = 15;
 
 magnetBaseInnerDiameter = 16.2;
@@ -19,7 +19,7 @@ magnetHeight = 3.2;
 
 
 
-length = 95;
+length = 103;
 width = 90;
 
 echo ("length");
