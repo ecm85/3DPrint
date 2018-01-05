@@ -3,18 +3,18 @@ height = 4;
 tokenHeight = 2.7;
 tokenDiameter = 16;
 notchHeight = 3;
-notchDiameter = 7;
+notchDiameter = 11;
 
 rowsOfCircles = 2;
 columnsOfCircles = 2; //must be even
 
 spaceBetweenCircles = 1;
-extraSpaceBetweenRows = 3;
+extraSpaceBetweenRows = 5;
 spaceFromSide = 2;
-spaceFromNotchSide = 4;
+spaceFromNotchSide = 5;
 extraPaddingForMagnet = 0;
 
-length = 42;
+length = 45;
 width = 37;
 
 echo ("length");
