@@ -1,21 +1,20 @@
 height = 4;
 
 tokenHeight = 2.7;
-tokenDiameter = 16;
-notchHeight = 3;
-notchDiameter = 11;
+tokenDiameter = 15.7;
 
 rowsOfCircles = 2;
 columnsOfCircles = 2; //must be even
 
 spaceBetweenCircles = 1;
-extraSpaceBetweenRows = 5;
+extraSpaceBetweenRows = 0;
 spaceFromSide = 2;
-spaceFromNotchSide = 5;
 extraPaddingForMagnet = 0;
+cutoutDiameter = 11;
 
-length = 45;
-width = 37;
+
+length = 36;
+width = 36;
 
 echo ("length");
 echo(length);
@@ -27,15 +26,15 @@ difference() {
     for(columnIndex=[0:columnsOfCircles - 1]) {
         for(rowIndex=[0:rowsOfCircles - 1]) {
             translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromNotchSide,
+                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide,
                 (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
                 height - tokenHeight])
                 cylinder(tokenHeight, d=tokenDiameter);
             translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromNotchSide - 6.3,
+                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide,
                 (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
-                height - notchHeight])
-                cylinder(notchHeight, d=notchDiameter);
+                0])
+                cylinder(height, d=cutoutDiameter);
         }
     }
 }

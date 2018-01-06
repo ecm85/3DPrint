@@ -1,26 +1,22 @@
 height = 4;
 
 tokenHeight = 2.7;
-tokenDiameter = 16;
-notchHeight = 3;
-notchDiameter = 11;
-notchOffset = 6.3;
+tokenDiameter = 15.6;
 
 rowsOfCircles = 5;
 columnsOfCircles = 4; //must be even
 
 spaceBetweenCircles = 1;
-extraSpaceBetweenRows = 3;
-spaceFromSide = 6;
-extraPaddingForMagnet = 15;
+spaceFromSide = 2;
+extraPaddingForMagnet = 14.8;
 
-magnetBaseInnerDiameter = 16.2;
-magnetHeight = 3.2;
+magnetBaseInnerDiameter = 13.1;
+magnetHeight = 2.7;
+cutoutDiameter = 13;
 
 
-
-length = 103;
-width = 90;
+length = 84;
+width = 86;
 
 echo ("length");
 echo(length);
@@ -33,16 +29,16 @@ difference() {
         for(rowIndex=[0:rowsOfCircles - 1]) {
             
             translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide,
+                (tokenDiameter + spaceBetweenCircles) * columnIndex + tokenDiameter/2 + spaceFromSide,
                 (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
                 height - tokenHeight])
                 cylinder(tokenHeight, d=tokenDiameter);
-            
             translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide - notchOffset,
+                (tokenDiameter + spaceBetweenCircles) * columnIndex + tokenDiameter/2 + spaceFromSide,
                 (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
-                height - notchHeight])
-                cylinder(notchHeight, d=notchDiameter);
+                0])
+                cylinder(height, d=cutoutDiameter);
+            
         }
     }
     
@@ -50,16 +46,16 @@ difference() {
         for(rowIndex=[0:rowsOfCircles - 1]) {
             
             translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide + extraPaddingForMagnet,
+                (tokenDiameter + spaceBetweenCircles) * columnIndex + tokenDiameter/2 + spaceFromSide + extraPaddingForMagnet,
                 (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
                 height - tokenHeight])
                 cylinder(tokenHeight, d=tokenDiameter);
-            
             translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide + extraPaddingForMagnet - notchOffset ,
+                (tokenDiameter + spaceBetweenCircles) * columnIndex + tokenDiameter/2 + spaceFromSide + extraPaddingForMagnet,
                 (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
-                height - notchHeight])
-                cylinder(notchHeight, d=notchDiameter);
+                0])
+                cylinder(height, d=cutoutDiameter);
+            
         }
     }
     translate([length/2, width/2, height - magnetHeight])
