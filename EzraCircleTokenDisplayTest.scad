@@ -1,20 +1,26 @@
-height = 4;
+height = 5;
 
 tokenHeight = 2.7;
-tokenDiameter = 15.7;
+tokenDiameter = 15.6;
 
-rowsOfCircles = 2;
-columnsOfCircles = 2; //must be even
+rowsOfCircles = 3;
+columnsOfCircles = 4; //must be even
 
-spaceBetweenCircles = 1;
-extraSpaceBetweenRows = 0;
+spaceBetweenCircles = 2.5;
 spaceFromSide = 2;
-extraPaddingForMagnet = 0;
-cutoutDiameter = 11;
+extraPaddingForMagnet = 14.8;
 
+magnetBaseInnerDiameter = 13.1;
+magnetHeight = 2.7;
 
-length = 36;
-width = 36;
+cutoutWidth = 18.3;
+cutoutLength = 8;
+cutoutHeight = tokenHeight + .7;
+
+useMagnet = true;
+
+length = 53;
+width = 56;
 
 echo ("length");
 echo(length);
@@ -25,16 +31,33 @@ difference() {
     cube([length, width, height]);
     for(columnIndex=[0:columnsOfCircles - 1]) {
         for(rowIndex=[0:rowsOfCircles - 1]) {
+            tokenX = !useMagnet || columnIndex <=columnsOfCircles/2 - 1 ? 
+                (tokenDiameter + spaceBetweenCircles) * columnIndex + tokenDiameter/2 + spaceFromSide :
+                (tokenDiameter + spaceBetweenCircles) * columnIndex + tokenDiameter/2 + spaceFromSide + extraPaddingForMagnet;
+            tokenY = (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide;
             translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide,
-                (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
+                tokenX,
+                tokenY,
                 height - tokenHeight])
                 cylinder(tokenHeight, d=tokenDiameter);
-            translate([
-                (tokenDiameter + spaceBetweenCircles + extraSpaceBetweenRows) * columnIndex + tokenDiameter/2 + spaceFromSide,
-                (tokenDiameter + spaceBetweenCircles) * rowIndex + tokenDiameter/2 + spaceFromSide,
-                0])
-                cylinder(height, d=cutoutDiameter);
+            if ((!useMagnet || columnIndex != columnsOfCircles/2 - 1) && columnIndex != columnsOfCircles-1 && rowIndex < rowsOfCircles - 1)
+            {
+                nextTokenX = !useMagnet || columnIndex <=columnsOfCircles/2 - 1 ? 
+                    (tokenDiameter + spaceBetweenCircles) * (columnIndex + 1) + tokenDiameter/2 + spaceFromSide :
+                    (tokenDiameter + spaceBetweenCircles) * (columnIndex + 1) + tokenDiameter/2 + spaceFromSide + extraPaddingForMagnet;
+                nextTokenY = (tokenDiameter + spaceBetweenCircles) * (rowIndex + 1) + tokenDiameter/2 + spaceFromSide;
+                cutoutCenterX = (tokenX + nextTokenX) / 2;
+                cutoutCenterY = (tokenY + nextTokenY) / 2;
+                translate([
+                    cutoutCenterX - cutoutLength/2,
+                    cutoutCenterY - cutoutWidth/2,
+                    height - cutoutHeight])
+                    cube([cutoutLength, cutoutWidth, cutoutHeight]);
+            }
+            
         }
     }
+    if(useMagnet)
+        translate([length - magnetBaseInnerDiameter/2 - 3, width/2, height - magnetHeight])
+            cylinder(magnetHeight, d=magnetBaseInnerDiameter);
 }
