@@ -1,6 +1,6 @@
 length = 76;
 width = 71;
-height = 30;
+height = 27;
 magnetPadding = 15;
 magnetBaseInnerDiameter = 13.1;
 magnetHeight = 2.7;
