@@ -1,7 +1,7 @@
 length = 89;
 width = 92;
-height = 4;
-rimHeight = 5;
+height = 3;
+rimHeight = 1.5;
 rimThickness = 2;
 
 //Based on washer size:
