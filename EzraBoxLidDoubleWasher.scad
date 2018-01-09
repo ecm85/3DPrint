@@ -1,7 +1,7 @@
 length = 100;
 width = 90;
 height = 3;
-rimHeight = 5;
+rimHeight = 1.5;
 rimThickness = 2;
 
 notchLength = 25;
