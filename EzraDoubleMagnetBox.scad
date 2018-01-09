@@ -1,6 +1,6 @@
 length = 85;
 width = 85;
-height = 15;
+height = 25;
 wallThickness = 2;
 floorThickness = 3;
 widthDividers = 2;
@@ -29,9 +29,13 @@ difference() {
             translate([ (length/lengthSections) * index - (wallThickness/2), 0, 0])
                 cube([wallThickness, width, height]);
         
-        translate([length/2, width/2, 0])
+        translate([length/2, width/3, 0])
+            cylinder(height, d=magnetBaseOuterDiameter);
+        translate([length/2, 2 * width/3, 0])
             cylinder(height, d=magnetBaseOuterDiameter);
     };
-    translate([length/2, width/2, height - magnetHeight])
+    translate([length/2, width/3, height - magnetHeight])
+        cylinder(magnetHeight, d=magnetBaseInnerDiameter);
+    translate([length/2, 2 * width/3, height - magnetHeight])
         cylinder(magnetHeight, d=magnetBaseInnerDiameter);
 };
