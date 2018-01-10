@@ -25,7 +25,7 @@ difference() {
         translate([0, (2 * width/3) - (wallThickness/2), 0])
             cube([length, wallThickness, height]);
         
-        translate([ (length/2) - (wallThickness/2), 0, 0])
+        translate([(length/2) - (wallThickness/2), 0, 0])
             cube([wallThickness, 2 * width/3, height]);
         
         translate([length/2, width/2, 0])

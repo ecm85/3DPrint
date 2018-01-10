@@ -21,12 +21,13 @@ widthSections = widthDividers + 1;
 lengthSections = lengthDividers + 1;
 difference() {
     union() {
-        
-        for(index=[0:widthDividers])
-            translate([0, (width/widthSections) * index - (wallThickness/2), 0])
+        if(widthDividers>0)
+            for(index=[1:widthDividers])
+                translate([0, (width/widthSections) * index - (wallThickness/2), 0])
                 cube([length, wallThickness, height]);
-        for(index=[0:lengthDividers])
-            translate([ (length/lengthSections) * index - (wallThickness/2), 0, 0])
+        if(lengthDividers>0)
+            for(index=[1:lengthDividers])
+                translate([ (length/lengthSections) * index - (wallThickness/2), 0, 0])
                 cube([wallThickness, width, height]);
         
         translate([length/2, width/3, 0])
