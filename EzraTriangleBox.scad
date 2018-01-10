@@ -22,11 +22,11 @@ lengthSections = lengthDividers + 1;
 difference() {
     union() {
         
-        translate([0, (2 * width/3) - (wallThickness/2), 0])
+        translate([0, (width/2) - (wallThickness/2), 0])
             cube([length, wallThickness, height]);
         
         translate([(length/2) - (wallThickness/2), 0, 0])
-            cube([wallThickness, 2 * width/3, height]);
+            cube([wallThickness, width/2, height]);
         
         translate([length/2, width/2, 0])
             cylinder(height, d=magnetBaseOuterDiameter);
