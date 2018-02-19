@@ -1,24 +1,6 @@
 3d print
 
-forge war:
-	forge war circle display:
-		print 3 more containers and 4 lids with notches
-	figure out design for player components for forge war
-		print 3 more boxes
-		Lid (Assuming it works) (needs single, off-center magnet)
-	boxes for forge war resource components
-		Designed both sizes - print and test
-			Change small one to 20 high (instead of 15)
-			change big one to 35 high
-		Need double-washer lid for each
-		Test the magnet pedestal - only 2mm bigger in diameter (instead of 4)
-	boxes for forge war other components (round, others?)
-brewcrafters:
-	1 box for basic resources - EzraDoubleMagnetBox85x85x15.stl, needs lid
-	1 box for advanced resources
-
-
-	4 85x85 double magnet lids
+measure new magnets
 
 
 rounded corners?
@@ -30,30 +12,66 @@ magnets used:
 Magnets in mail size TODO - pedesdal should be TODO, hole should be TODO
 Washers from Ace Hardware - size 1/4" SAE Steel Flat Washers, , hold should be 16.25x1.4
 
-holes for 
-
 prints:
 	Not mine:
 		TEQ - no magnets
 		ACBAS - no magnets
 		Scythe Coin holder - no magnets
-		Above and Below holder - uses magnets coming in mail
+		Above and Below holder - uses magnets in mail
+		Not games:
+			Cat
+			Tink
 	Mine:
 		LoW:
 			Adventurers:
 				EzraBox90x90x25.stl, uses 5/8" magnets
-				Lid1 EzraBoxLid90x90x4.stl, uses washers from Ace
-				Lid2 EzraBoxLid90x90WithLip5x2.stl, uses washers from Ace
+				Lid1 EzraBoxLid90x90x4.stl
+				Lid2 EzraBoxLid90x90WithLip5x2.stl
 			Money + Rubies:
 				EzraTriangleBox85x85x35.stl, uses 5/8" magnets
-				Lid EzraBoxLid85x85WithLip5x2.stl, uses washers from Ace
+				Lid EzraBoxLid85x85WithLip5x2.stl
 		Forge War:
 			Square Tokens:
 				EzraSquareBoxForgeWar2.stl, uses 5/8" magnets
-				Lid EzraBoxLid63x70WithLip5x2.stl, uses washers from ace
-			Circle tokens:
-			Personal box:
-			Wooden Resources:
+				Lid EzraBoxLid63x70WithLip5x2.stl
+			Circle tokens (4x):
+				EzraForgeWarTokenDisplay.stl
+				EzraBoxLidDoubleWasher100x90x3WithLip1.5x2WithNotches.stl
+			Personal box (4x):
+				EzraForgeWarPersonalBox.stl, uses 12.7mm magnets
+				EzraForgeWarPersonalBoxLid.stl
+			Basic Resources:
+				Box: TODO (already printed) (change big one to 35 high?)
+				Lid: TODO
+			Advanced Resources:
+				Box: TODO (needs printed, 20 high (instead of 15) i think, slightly taller than brewcrafters advanced)
+				Lid: TODO
+			Box for round tokens:
+				1-2 tokens
+				3-4 tokens
+				gold
+				silver
+			Other:
+				Figure out adventurers, other weird tokens
+				Brackets for map tiles
+		Brewcrafters:
+			Basic Resources
+				Box TODO (match one that got borked) (use triangle box, change magnet to one from mail) (EzraDoubleMagnetBox85x85x15.stl?)
+				Lid TODO
+			Advanced Resources
+				Box TODO (already printed)
+				Lid TODO
+			Money (1's and 5's) and debt
+				Box TODO (already printed)
+				Lid TODO
+			Points + 2x tokens
+				Box TODO (Use EzraTriangleBox85x85x35.stl, chagne magnet to one from mail)
+				Lid TODO (Use EzraBoxLid85x85WithLip5x2.stl, maybe add notch)
+
+
+
+
+
 
 
 
