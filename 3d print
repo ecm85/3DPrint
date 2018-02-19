@@ -1,0 +1,66 @@
+3d print
+
+forge war:
+	forge war circle display:
+		print 3 more containers and 4 lids with notches
+	figure out design for player components for forge war
+		print 3 more boxes
+		Lid (Assuming it works) (needs single, off-center magnet)
+	boxes for forge war resource components
+		Designed both sizes - print and test
+			Change small one to 20 high (instead of 15)
+			change big one to 35 high
+		Need double-washer lid for each
+		Test the magnet pedestal - only 2mm bigger in diameter (instead of 4)
+	boxes for forge war other components (round, others?)
+brewcrafters:
+	1 box for basic resources - EzraDoubleMagnetBox85x85x15.stl, needs lid
+	1 box for advanced resources
+
+
+	4 85x85 double magnet lids
+
+
+rounded corners?
+
+
+magnets used:
+5/8" (both countersunk and not) from TODO, pedestal should be 20, hole should be 16.2 x 3.2
+12.7mm from Michaels - pedestal should be 15.1 (or should it be 17.1? TODO), hole should be 13.1 x 2.7;
+Magnets in mail size TODO - pedesdal should be TODO, hole should be TODO
+Washers from Ace Hardware - size 1/4" SAE Steel Flat Washers, , hold should be 16.25x1.4
+
+holes for 
+
+prints:
+	Not mine:
+		TEQ - no magnets
+		ACBAS - no magnets
+		Scythe Coin holder - no magnets
+		Above and Below holder - uses magnets coming in mail
+	Mine:
+		LoW:
+			Adventurers:
+				EzraBox90x90x25.stl, uses 5/8" magnets
+				Lid1 EzraBoxLid90x90x4.stl, uses washers from Ace
+				Lid2 EzraBoxLid90x90WithLip5x2.stl, uses washers from Ace
+			Money + Rubies:
+				EzraTriangleBox85x85x35.stl, uses 5/8" magnets
+				Lid EzraBoxLid85x85WithLip5x2.stl, uses washers from Ace
+		Forge War:
+			Square Tokens:
+				EzraSquareBoxForgeWar2.stl, uses 5/8" magnets
+				Lid EzraBoxLid63x70WithLip5x2.stl, uses washers from ace
+			Circle tokens:
+			Personal box:
+			Wooden Resources:
+
+
+
+
+Tinkerbell
+
+Weeping Angel
+Grapnel headphone mount
+Tree for jeff
+Betrayal inserts
