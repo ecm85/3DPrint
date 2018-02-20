@@ -19,7 +19,7 @@ difference() {
     translate([rimThickness, rimThickness, height])
         cube([length + rimPadding, width + rimPadding, rimHeight]);
     
-    translate([totalLength/2 - notchLength/2, 0, 1])
+    translate([totalLength/2 - notchLength/2, 0, 0])
         cube([notchLength, rimThickness, totalHeight]);
     translate([totalLength/2 - notchLength/2, totalWidth-rimThickness, 0])
         cube([notchLength, rimThickness, totalHeight]);

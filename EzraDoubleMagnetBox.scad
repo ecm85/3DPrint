@@ -1,6 +1,6 @@
 length = 85;
 width = 85;
-height = 15;
+height = 20;
 wallThickness = 2;
 floorThickness = 3;
 widthDividers = 2;
