@@ -1,5 +1,5 @@
 length = 80;
-width = 70;
+width = 58;
 height = 27;
 
 floorThickness = 3;
@@ -11,7 +11,7 @@ magnetHeight = 3.2;
 
 smallCircleDiameter = 16;
 smallCircleOffset = 2;
-largeCircleDiameter = 25;
+largeCircleDiameter = 23;
 largeCircleOffset = 5;
 
 spaceBetweenCircles = 3;
