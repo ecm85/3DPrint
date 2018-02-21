@@ -9,7 +9,7 @@ rounded corners?
 magnets used:
 5/8" (both countersunk and not) from TODO, pedestal should be 20, hole should be 16.2 x 3.2
 12.7mm from Michaels - pedestal should be 15.1 (or should it be 17.1? TODO), hole should be 13.1 x 2.7;
-Magnets in mail size TODO - pedesdal should be TODO, hole should be TODO
+Magnets in mail size 15mm x 5mm - pedesdal should be 18.2, hole should be 15.2mm?
 Washers from Ace Hardware - size 1/4" SAE Steel Flat Washers, , hold should be 16.25x1.4
 
 prints:
@@ -35,38 +35,45 @@ prints:
 				EzraSquareBoxForgeWar2.stl, uses 5/8" magnets
 				Lid EzraBoxLid63x70WithLip5x2.stl
 			Circle tokens (4x):
-				EzraForgeWarTokenDisplay.stl
+				EzraForgeWarTokenDisplay.stl, uses 12.7mm magnets
 				EzraBoxLidDoubleWasher100x90x3WithLip1.5x2WithNotches.stl
 			Personal box (4x):
 				EzraForgeWarPersonalBox.stl, uses 12.7mm magnets
 				EzraForgeWarPersonalBoxLid.stl
 			Basic Resources:
-				Box: TODO (already printed) (change big one to 35 high?)
-				Lid: TODO
+				Box: EzraDoubleMagnetBox85x85x35.stl, uses 12.7mm magnets
+				Lid: EzraBoxLidDoubleWasherSymmetric85x85x3WithLip5x2WithNotches.stl
 			Advanced Resources:
-				Box: TODO (needs printed, 20 high (instead of 15) i think, slightly taller than brewcrafters advanced)
-				Lid: TODO
+				Box: EzraDoubleMagnetBox85x85x20.stl, uses 12.7mm magnets
+				Lid: EzraBoxLidDoubleWasherSymmetric85x85x3WithLip5x2WithNotches.stl
 			Box for round tokens:
-				1-2 tokens
-				3-4 tokens
-				gold
-				silver
+				Box: EzraCircleBoxForgeWar.stl, uses 5/8" magnets
+				Lid: EzraBoxLid80x58WithLip5x2WithNotches.stl
+			Adventurers:
+				Box: TODO: EzraBox80x60x30x2 sections.stl, uses 12.7mm magnets
+				Lid: TODO: EzraBoxLid80x60WithLip5x2WithNotches.stl
 			Other:
-				Figure out adventurers, other weird tokens
 				Brackets for map tiles
 		Brewcrafters:
 			Basic Resources
-				Box TODO (match one that got borked) (use triangle box, change magnet to one from mail) (EzraDoubleMagnetBox85x85x15.stl?)
-				Lid TODO
+				Box TODO (needs reprinted, will be EzraTriangleBox85x85x35.stl) 
+				Lid TODO (will be EzraBoxLid85x85WithLip5x2.stl with notches)
 			Advanced Resources
-				Box TODO (already printed)
-				Lid TODO
+				Box EzraDoubleMagnetBox85x85x15.stl (screwed up double wall version), uses 12.7mm magnets
+				Lid TODO (will be EzraBoxLidDoubleWasherSymmetric85x85x3WithLip5x2WithNotches.stl, double wall version)
 			Money (1's and 5's) and debt
-				Box TODO (already printed)
-				Lid TODO
+				Box EzraDoubleMagnetBox85x85x35.stl (screwed up double wall version), uses 12.7mm magnets
+				Lid TODO (will be EzraBoxLidDoubleWasherSymmetric85x85x3WithLip5x2WithNotches.stl, double wall version)
 			Points + 2x tokens
 				Box TODO (Use EzraTriangleBox85x85x35.stl, chagne magnet to one from mail)
-				Lid TODO (Use EzraBoxLid85x85WithLip5x2.stl, maybe add notch)
+				Lid TODO (Use EzraBoxLid85x85WithLip5x2.stl with notches)
+
+		TODO:
+			Reprint money tokens
+			Gloomhaven
+			World's Fair
+
+
 
 
 

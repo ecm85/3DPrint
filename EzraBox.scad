@@ -1,9 +1,9 @@
-length = 90;
-width = 90;
-height = 35;
+length = 80;
+width = 60;
+height = 30;
 wallThickness = 2;
 floorThickness = 3;
-widthDividers = 2;
+widthDividers = 0;
 lengthDividers = 1;
 
 //Based on magnet size:
