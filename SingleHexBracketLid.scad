@@ -1,9 +1,9 @@
 //TODO: Get this diameter
-magnetDiameter = 8;
+magnetDiameter = 9;
 //TODO: Get this height
-magnetHeight = .5;
+magnetHeight = .9;
 
-hexDiameter = 44;
+hexDiameter = 45;
 outerHexDiameterPadding = 17;
 hexPileHeight = 3;
 floorThickness = 2;
@@ -16,9 +16,9 @@ difference()
     cylinder(h=hexPileHeight + floorThickness, d=actualDiameter + actualOuterHexDiameterPadding, $fn=6);
     translate([0, 0, floorThickness])
         cylinder(h=hexPileHeight, d=actualDiameter, $fn=6);
-    translate([(hexDiameter)/2 + magnetDiameter/2 - 1, 0, floorThickness - magnetHeight])
+    translate([(hexDiameter)/2 + magnetDiameter/2 - 3, 0, floorThickness - magnetHeight])
         cylinder(h=magnetHeight, d=magnetDiameter);  
-    translate([-(hexDiameter)/2 -magnetDiameter/2 + 1, 0, floorThickness - magnetHeight])
+    translate([-(hexDiameter)/2 -magnetDiameter/2 + 3, 0, floorThickness - magnetHeight])
         cylinder(h=magnetHeight, d=magnetDiameter);
     translate([-25, -35, 0])
         cube([(hexDiameter + outerHexDiameterPadding) / 2 + 20, outerHexDiameterPadding, hexPileHeight + floorThickness]);
