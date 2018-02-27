@@ -68,17 +68,17 @@ twoCoinDiameter = 20.9 + 1;
 oneCoinDiameter = 20.1 + 1;
 
 spaceBetweenCircles = 1.5;
-    translate([fiftyCoinDiameter/2 + spaceBetweenCircles + rimThickness + rimPadding, fiftyCoinDiameter/2 - coinOffset, height])
-            cylinder(rimHeight, d=fiftyCoinDiameter);
+    translate([oneCoinDiameter/2 + spaceBetweenCircles + rimThickness + rimPadding, oneCoinDiameter/2 - coinOffset, height])
+            cylinder(rimHeight, d=oneCoinDiameter);
 
-    translate([fiftyCoinDiameter + fiveCoinDiameter/2 + rimThickness + rimPadding + spaceBetweenCircles * 2, fiveCoinDiameter/2 - coinOffset, height])
-        cylinder(rimHeight, d=fiveCoinDiameter);
-    
-    translate([fiftyCoinDiameter + fiveCoinDiameter + twoCoinDiameter/2 + rimThickness + rimPadding + spaceBetweenCircles * 3, twoCoinDiameter/2 - coinOffset, height])
+    translate([oneCoinDiameter + twoCoinDiameter/2 + rimThickness + rimPadding + spaceBetweenCircles * 2, twoCoinDiameter/2 - coinOffset, height])
         cylinder(rimHeight, d=twoCoinDiameter);
     
-    translate([fiftyCoinDiameter + fiveCoinDiameter + twoCoinDiameter + oneCoinDiameter/2  + rimThickness + rimPadding + spaceBetweenCircles * 4, oneCoinDiameter/2 - coinOffset, height])
-        cylinder(rimHeight, d=oneCoinDiameter);
+    translate([oneCoinDiameter + twoCoinDiameter + fiveCoinDiameter/2 + rimThickness + rimPadding + spaceBetweenCircles * 3, fiveCoinDiameter/2 - coinOffset, height])
+        cylinder(rimHeight, d=fiveCoinDiameter);
+    
+    translate([oneCoinDiameter + fiveCoinDiameter + twoCoinDiameter + fiftyCoinDiameter/2  + rimThickness + rimPadding + spaceBetweenCircles * 4, fiftyCoinDiameter/2 - coinOffset, height])
+        cylinder(rimHeight, d=fiftyCoinDiameter);
 }
 
 module RightCircles()
@@ -104,16 +104,16 @@ oneCoinDiameter = 20.1 + 1;
 
 spaceBetweenCircles = 1.5;
     
-    translate([oneCoinDiameter/2  + rimThickness + rimPadding + spaceBetweenCircles, totalWidth - (oneCoinDiameter/2 - coinOffset), height])
-        cylinder(rimHeight, d=oneCoinDiameter);
-    
-    translate([oneCoinDiameter  + rimThickness + rimPadding + threeCoinDiameter/2 + spaceBetweenCircles * 2, totalWidth - (threeCoinDiameter/2 - coinOffset), height])
-        cylinder(rimHeight, d=threeCoinDiameter);
-    
-    translate([oneCoinDiameter  + rimThickness + rimPadding + threeCoinDiameter + tenCoinDiameter/2 + spaceBetweenCircles * 3, totalWidth - (tenCoinDiameter/2 - coinOffset), height])
-        cylinder(rimHeight, d=tenCoinDiameter);
-        
-        translate([oneCoinDiameter  + rimThickness + rimPadding + threeCoinDiameter + tenCoinDiameter + twentyCoinDiameter/2 + spaceBetweenCircles * 4, totalWidth - (twentyCoinDiameter/2 - coinOffset), height])
+    translate([twentyCoinDiameter/2  + rimThickness + rimPadding + spaceBetweenCircles, totalWidth - (twentyCoinDiameter/2 - coinOffset), height])
         cylinder(rimHeight, d=twentyCoinDiameter);
+    
+    translate([twentyCoinDiameter  + rimThickness + rimPadding + tenCoinDiameter/2 + spaceBetweenCircles * 2, totalWidth - (tenCoinDiameter/2 - coinOffset), height])
+        cylinder(rimHeight, d=tenCoinDiameter);
+    
+    translate([twentyCoinDiameter  + rimThickness + rimPadding + tenCoinDiameter + threeCoinDiameter/2 + spaceBetweenCircles * 3, totalWidth - (threeCoinDiameter/2 - coinOffset), height])
+        cylinder(rimHeight, d=threeCoinDiameter);
+        
+        translate([twentyCoinDiameter  + rimThickness + rimPadding + threeCoinDiameter + tenCoinDiameter + oneCoinDiameter/2 + spaceBetweenCircles * 4, totalWidth - (oneCoinDiameter/2 - coinOffset), height])
+        cylinder(rimHeight, d=oneCoinDiameter);
 }
 
