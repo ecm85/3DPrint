@@ -1,17 +1,18 @@
 length = 63;
-width = 70;
-height = 27;
+width = 63;
+
 
 floorThickness = 3;
-
+height = 12.3 + floorThickness + .5;
 
 //Based on magnet size:
 magnetBaseOuterDiameter = 20;
-magnetBaseInnerDiameter = 16.2;
-magnetHeight = 3.2;
+magnetBaseInnerDiameter = 15.4;
 
-smallSquareSide = 16;
-largeSquareSide = 21;
+magnetHeight = 4.0;
+
+smallSquareSide = 13.9 + 1.3;
+largeSquareSide = smallSquareSide;
 
 difference(){
     cube([length, width, height]);
