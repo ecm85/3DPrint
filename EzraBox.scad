@@ -1,15 +1,16 @@
-length = 80;
-width = 80;
-height = 30;
+length = 85;
+width = 85;
+height = 25;
 wallThickness = 2;
 floorThickness = 3;
-widthDividers = 0;
+widthDividers = 3;
 lengthDividers = 0;
+widthDividerToSkip = 3;
 
 //Based on magnet size:
-magnetBaseOuterDiameter = 15.1;
-magnetBaseInnerDiameter = 13.1;
-magnetHeight = 2.7;
+magnetBaseOuterDiameter = 18;
+magnetBaseInnerDiameter = 15.4;
+magnetHeight = 4.0;
 
 
 difference(){
@@ -23,12 +24,13 @@ difference() {
     union() {
         if(widthDividers>0)
             for(index=[1:widthDividers])
-                translate([0, (width/widthSections) * index - (wallThickness/2), 0])
-                    cube([length, wallThickness, height]);
+                if (index != widthDividerToSkip)
+                    translate([0, (width/widthSections) * index - (wallThickness/2), 0])
+                        cube([length, wallThickness, height]);
         if(lengthDividers>0)
             for(index=[1:lengthDividers])
                 translate([ (length/lengthSections) * index - (wallThickness/2), 0, 0])
-                cube([wallThickness, width, height]);
+                    cube([wallThickness, width, height]);
         
         translate([length/2, width/2, 0])
             cylinder(height, d=magnetBaseOuterDiameter);
