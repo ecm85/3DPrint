@@ -1,6 +1,6 @@
-length = 85;
-width = 85;
-height = 35;
+length = 70;
+width = 70;
+height = 25;
 wallThickness = 2;
 floorThickness = 3;
 widthDividers = 0;
@@ -27,8 +27,8 @@ difference() {
         translate([(length/2) - (wallThickness/2), 0, 0])
             cube([wallThickness, .5 * width, height]);
         
-        translate([(.60 * length) - (wallThickness/2), width/2, 0])
-            cube([wallThickness, .5 * width, height]);
+//        translate([(.60 * length) - (wallThickness/2), width/2, 0])
+//            cube([wallThickness, .5 * width, height]);
         
         translate([length/2, width/2, 0])
             cylinder(height, d=magnetBaseOuterDiameter);
