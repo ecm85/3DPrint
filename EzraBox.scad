@@ -1,11 +1,11 @@
-length = 85;
-width = 85;
+length = 80;
+width = 60;
 height = 25;
 wallThickness = 2;
 floorThickness = 3;
-widthDividers = 3;
-lengthDividers = 0;
-widthDividerToSkip = 3;
+widthDividers = 0;
+lengthDividers = 1;
+widthDividerToSkip = -1;
 
 //Based on magnet size:
 magnetBaseOuterDiameter = 18;
