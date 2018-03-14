@@ -75,6 +75,22 @@ prints:
 
 
 
+alchemists
+	potion result tokens
+		diameter 14.7 mm (use 15.5 to be safe)
+		thickness 2.25 mm
+			x 4 = 9 (use 9.5 to be safe)
+			x 8 = 18 (use 18.5 to be safe)
+			x 10 = 22.5 (use 23 to be safe)
+			x 20 = 45 (use 45.5 to be safe)
+		blue, reg, green
+			20 of each
+		double-colors (blue/red, blue/green, reg/green)
+			8 of each
+		water
+			12
+		neutral +/
+			8
 
 
 
