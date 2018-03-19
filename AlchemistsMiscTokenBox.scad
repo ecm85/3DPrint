@@ -63,9 +63,15 @@ difference(){
         rotate([0,0,45])
             cube([reagentTokenTriangleSide, reagentTokenTriangleSide,reagentTokenHeight]);
 
-    translate([length - (alchemicalTokenDiameter + squareLipThickness), width/2 - alchemicalTokenDiameter/2, height - alchemicalTokenHeight])
+    translate([
+        length - (alchemicalTokenDiameter + squareLipThickness),
+        width/2 - alchemicalTokenDiameter/2,
+        height - alchemicalTokenHeight])
         cube([alchemicalTokenDiameter, alchemicalTokenDiameter, alchemicalTokenHeight]);
-    translate([length - (alchemicalTokenDiameter + squareLipThickness - squareLipLengthRemainder), width/2 - (alchemicalTokenDiameter - squareLipWidthRemainder)/2, 0])
+    translate([
+        length - (alchemicalTokenDiameter + squareLipThickness - squareLipLengthRemainder),
+        width/2 - (alchemicalTokenDiameter - squareLipWidthRemainder)/2,
+        0])
         cube([
             alchemicalTokenDiameter + squareLipThickness - squareLipLengthRemainder,
             alchemicalTokenDiameter - squareLipWidthRemainder,
