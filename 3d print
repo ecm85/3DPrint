@@ -92,6 +92,32 @@ alchemists
 		neutral +/
 			8
 
+clank
+	non-setup box
+		market tokens
+			2 each, 4 types
+			20.5 square,  4.2 height
+		escape pod tokens
+			4 in one stack
+			23.8 x 20.7, 8.34 height
+		command code tokens
+			4, strange hexes
+			bounding rectangle 30.3 x 20.75
+			8.45 height
+	setup box
+		minor secrets
+			28, 4x piles of 7
+			diameter 20.15
+			height 14.6
+		major secrets
+			1 pile of 6, one of 5
+			diameter 21.9
+			height 12.5 and 10.45
+		artifacts
+			1 pile of 6
+			hex, 30.3 diameter
+			height 12.45
+
 
 
 
