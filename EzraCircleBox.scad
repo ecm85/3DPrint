@@ -5,9 +5,8 @@ height = 27;
 floorThickness = 3;
 
 //Based on magnet size:
-magnetBaseOuterDiameter = 20;
-magnetBaseInnerDiameter = 16.2;
-magnetHeight = 3.2;
+magnetBaseInnerDiameter = 15.4;
+magnetHeight = 4.0;
 
 smallCircleDiameter = 16;
 smallCircleOffset = 2;

@@ -102,7 +102,7 @@ clank
 			23.8 x 20.7, 8.34 height
 		command code tokens
 			4, strange hexes
-			bounding rectangle 30.3 x 20.75
+			bounding rectangle 30.3 x 22.66
 			8.45 height
 	setup box
 		minor secrets
@@ -118,19 +118,71 @@ clank
 			hex, 30.3 diameter
 			height 12.45
 	personal box
-		30 cubes, 7.9 cubed
+		30 cubes, 7.85-8.1 (use 8.6) cubed
 		2 cubes, 10 cubed
 		1 player token
-			19.08, 19.07, 18.6, 18.76 height
-			20.20, 17.45, 17.7, 17 width
-			10, 9.8, 10.05, 9.9 thick
+			orange
+				17.25 width, 18.8 tall, 10.0 thick
+			blue
+				19.7 width, 18.7 tall, 9.95 thick
+			purple
+				17.4 width, 19.5 tall, 10.0 tall
+			white
+				17.7 width, 19.05 tall, 9.8 thick
+
+
+			//call all 4 10.0 thick (use 10.7)
+			//call all of them 19.5 tall (use 20.0)
+
+
+			//19.08, 19.07, 18.6, 18.76 height
+			//20.20, 17.45, 17.7, 17 width
+			//10, 9.8, 10.05, 9.9 thick
 		
 
+world's fair
+	exhibit tokens
+		12 each, 5 colors
+		23.35 tall, 22.15 x 22.38
+	coins
+		1s
+			19.11 diameter
+			17 coins
+			height 33.15, or 17.55 and 15.6
+
+		2s
+			13 coins
+			23.11 diameter
+			height 25.45, or 13.68 and 11.74
+		4s
+			4 coins
+			28.11 diameter
+			7.8 height
+	medals
+		2s
+			23 tokens
+			19.05 diameter
+			extra box 13.7 x 9.05
+			height 23.45 + 21.39
+		4s
+			15 tokens
+			23.17 diameter
+			extra box 17.11 x 10.7
+			height 29.35, or 15.68 + 13.74
+	2 wooden tokens
 
 
+scythe coins:
+50 coins - 34.1mm diameter, 7 coins, 2.35 thick, 16.7 total thick
+20 coins - 30.2mm diameter, 10 coins, 1.94 thick, 19.2 total thickness
+10 coins - 26.2mm diameter, 15 coin, 1.9 thick, 28.2 total thickness
+5 coins - 24.1 diameter, 15 coins, 1.9 thick, 29.1 total thickness
+3 coins - 22.1 diameter, 15 coins, 1.9 thick, 29.2 total thickness
+2 coins - 20.9 diameter, 15 coins, 1.9 thick, 28.8 total thickness
+1 coins - 20.1 diameter, 12 coins, 1.9 thick, 23.3 total thickness
+1 coins - 20.1 diameter, 13 coins, 1.9 thick, 25.2 total thickness
 
-
-
+22.66
 
 
 Tinkerbell
