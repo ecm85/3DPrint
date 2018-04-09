@@ -36,7 +36,7 @@ mediumCircleOffset = 4;
 mediumCircleHeight1 = 5 + .5;
 mediumCircleHeight2 = 5 + .5;
 mediumExtraBoxLength=17.11 + .5;
-mediumExtraBoxWidth = 10.7 + 4 + .5;
+mediumExtraBoxWidth = 10.7 + 3 + .5;
 mediumBoxWidthOffset = 4;
 
 
