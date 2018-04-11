@@ -8,9 +8,9 @@ magnetBaseInnerDiameter = 15.4;
 
 magnetHeight = 4.0;
 
-radioTokenWidth = 18.05 + .5;
-radioTokenLength = 18.00 + .5;
-radioTokenHeight = 1.75 + .5;
+radioTokenWidth = 18.05 + .75;
+radioTokenLength = 18.00 + .75;
+radioTokenHeight = 1.75 + .75;
 
 squareLipWidthRemainder = 4;
 squareLipLengthRemainder = 15;
