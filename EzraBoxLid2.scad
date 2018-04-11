@@ -1,5 +1,5 @@
-length = 45;
-width = 55;
+length = 2 * 110/3;
+width = 110;
 height = 3;
 rimHeight = 5;
 rimThickness = 2;

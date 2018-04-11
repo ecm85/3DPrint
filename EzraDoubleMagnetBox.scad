@@ -1,15 +1,15 @@
-length = 85;
-width = 85;
-height = 20;
+length = 110;
+width = 110;
+height = 35;
 wallThickness = 2;
 floorThickness = 3;
 widthDividers = 2;
 lengthDividers = 0;
 
 //Based on magnet size:
-magnetBaseOuterDiameter = 15.1;
-magnetBaseInnerDiameter = 13.1;
-magnetHeight = 2.7;
+magnetBaseOuterDiameter = 18;
+magnetBaseInnerDiameter = 15.4;
+magnetHeight = 4;
 
 
 difference(){

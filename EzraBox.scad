@@ -1,6 +1,6 @@
-length = 80;
-width = 60;
-height = 25;
+length = 2 * 110/3;
+width = 110;
+height = 35;
 wallThickness = 2;
 floorThickness = 3;
 widthDividers = 0;
