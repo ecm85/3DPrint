@@ -1,5 +1,5 @@
-length = 98;
-width = 65;
+length = 65;
+width = 108;
 height = 7;
 
 //Based on magnet size:
@@ -38,12 +38,34 @@ difference(){
             billboardSmallTokenWidth - squareLipWidthRemainder,
             height]);
     
+    translate([wallThickness, wallThickness + billboardSmallTokenWidth + spaceBetweenSquares, height - billboardSmallTokenHeight])
+        cube([billboardSmallTokenLength,billboardSmallTokenWidth, billboardSmallTokenHeight]);
+    translate([
+        0,
+       wallThickness + billboardSmallTokenWidth + spaceBetweenSquares + squareLipWidthRemainder/2,
+        0])
+        cube([
+            billboardSmallTokenLength + wallThickness - squareLipLengthRemainder,
+            billboardSmallTokenWidth - squareLipWidthRemainder,
+            height]);
+            
+    translate([wallThickness, wallThickness + billboardSmallTokenWidth * 2 + spaceBetweenSquares * 2, height - billboardSmallTokenHeight])
+        cube([billboardSmallTokenLength,billboardSmallTokenWidth, billboardSmallTokenHeight]);
+    translate([
+        0,
+       wallThickness + billboardSmallTokenWidth * 2 + spaceBetweenSquares * 2 + squareLipWidthRemainder/2,
+        0])
+        cube([
+            billboardSmallTokenLength + wallThickness - squareLipLengthRemainder,
+            billboardSmallTokenWidth - squareLipWidthRemainder,
+            height]);
     
-    translate([wallThickness, width - (wallThickness + billboardLargeTokenWidth), height - billboardLargeTokenHeight])
+    
+    translate([wallThickness, wallThickness + billboardSmallTokenWidth * 3 + spaceBetweenSquares * 3, height - billboardLargeTokenHeight])
         cube([billboardLargeTokenLength,billboardLargeTokenWidth, billboardLargeTokenHeight]);
     translate([
         0,
-        width - (wallThickness + billboardLargeTokenWidth) + squareLipWidthRemainder/2,
+        wallThickness + billboardSmallTokenWidth * 3 + spaceBetweenSquares * 3 + squareLipWidthRemainder/2,
         0])
         cube([
             billboardLargeTokenLength + wallThickness - squareLipLengthRemainder,
@@ -51,46 +73,48 @@ difference(){
             height]);
             
             
-     translate([length/2 - (spaceBetweenSquares + billboardSmallTokenLength), wallThickness, height - billboardSmallTokenHeight])
-        cube([billboardSmallTokenWidth, billboardSmallTokenLength, billboardSmallTokenHeight]);
+            
+            
+            
+            
+    translate([length - (wallThickness + billboardLargeTokenLength), wallThickness, height - billboardLargeTokenHeight])
+        cube([billboardLargeTokenLength,billboardLargeTokenWidth, billboardLargeTokenHeight]);
     translate([
-        length/2 - (spaceBetweenSquares + billboardSmallTokenLength) + squareLipWidthRemainder/2,
-        0,
+        length - (wallThickness + billboardLargeTokenLength - squareLipLengthRemainder),
+        wallThickness + squareLipWidthRemainder/2,
         0])
         cube([
-            billboardSmallTokenWidth - squareLipWidthRemainder,
-            billboardSmallTokenWidth - squareLipLengthRemainder,
-            height]);       
-            
-            
-    translate([length/2 + (spaceBetweenSquares), wallThickness, height - billboardSmallTokenHeight])
-        cube([billboardSmallTokenWidth, billboardSmallTokenLength, billboardSmallTokenHeight]);
-    translate([
-        length/2 + (spaceBetweenSquares) + squareLipWidthRemainder/2,
-        0,
-        0])
-        cube([
-            billboardSmallTokenWidth - squareLipWidthRemainder,
-            billboardSmallTokenWidth - squareLipLengthRemainder,
-            height]);   
-            
-
-    translate([length - (wallThickness + billboardSmallTokenLength), wallThickness, height - billboardSmallTokenHeight])
+            billboardLargeTokenLength + wallThickness - squareLipLengthRemainder,
+            billboardLargeTokenWidth - squareLipWidthRemainder,
+            height]);
+    
+    translate([length - (wallThickness + billboardSmallTokenLength) , wallThickness + billboardLargeTokenWidth + spaceBetweenSquares, height - billboardSmallTokenHeight])
         cube([billboardSmallTokenLength,billboardSmallTokenWidth, billboardSmallTokenHeight]);
     translate([
         length - (wallThickness + billboardSmallTokenLength - squareLipLengthRemainder),
-        wallThickness + squareLipWidthRemainder/2,
+        wallThickness + billboardLargeTokenLength + spaceBetweenSquares + squareLipWidthRemainder/2,
+        0])
+        cube([
+            billboardSmallTokenLength + wallThickness - squareLipLengthRemainder,
+            billboardSmallTokenWidth - squareLipWidthRemainder,
+            height]);
+            
+     translate([length - (wallThickness + billboardSmallTokenLength) , wallThickness + billboardLargeTokenLength + billboardSmallTokenWidth + spaceBetweenSquares * 2, height - billboardSmallTokenHeight])
+        cube([billboardSmallTokenLength,billboardSmallTokenWidth, billboardSmallTokenHeight]);
+    translate([
+        length - (wallThickness + billboardSmallTokenLength - squareLipLengthRemainder),
+        wallThickness + billboardLargeTokenLength + billboardSmallTokenWidth + spaceBetweenSquares * 2 + squareLipWidthRemainder/2,
         0])
         cube([
             billboardSmallTokenLength + wallThickness - squareLipLengthRemainder,
             billboardSmallTokenWidth - squareLipWidthRemainder,
             height]);
     
-    translate([length - (wallThickness + billboardSmallTokenLength) , width - (wallThickness + billboardSmallTokenWidth), height - billboardSmallTokenHeight])
+    translate([length - (wallThickness + billboardSmallTokenLength) , wallThickness + billboardLargeTokenLength + billboardSmallTokenWidth * 2 + spaceBetweenSquares * 3, height - billboardSmallTokenHeight])
         cube([billboardSmallTokenLength,billboardSmallTokenWidth, billboardSmallTokenHeight]);
     translate([
         length - (wallThickness + billboardSmallTokenLength - squareLipLengthRemainder),
-        width - (wallThickness + billboardSmallTokenWidth) + squareLipWidthRemainder/2,
+        wallThickness + billboardLargeTokenLength + billboardSmallTokenWidth * 2 + spaceBetweenSquares * 3 + squareLipWidthRemainder/2,
         0])
         cube([
             billboardSmallTokenLength + wallThickness - squareLipLengthRemainder,
