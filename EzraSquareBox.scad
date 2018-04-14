@@ -12,12 +12,12 @@ billboardOneByOneTokenWidth = 18.05 + .75;
 billboardOneByOneTokenLength = 18.00 + .75;
 billboardOneByOneTokenHeight = 1.75 + .75;
 
-billboardTwoByOneTokenWidth = 18.00 + .75;
-billboardTwoByOneTokenLength = 36.15 + .75;
+billboardTwoByOneTokenWidth = 36.15 + .75;
+billboardTwoByOneTokenLength = 18.00 + .75;
 billboardTwoByOneTokenHeight = 1.75 + .75;
 
-billboardThreeByOneTokenWidth = 18.0 + .75;
-billboardThreeByOneTokenLength = 54.0 + .75;
+billboardThreeByOneTokenWidth = 54.0 + .75;
+billboardThreeByOneTokenLength = 18.0  + .75;
 billboardThreeByOneTokenHeight = 1.75 + .75;
 
 billboardThreeByTwoTokenWidth = 53.8 + .75;
@@ -27,7 +27,7 @@ billboardThreeByTwoTokenHeight = 1.75 + .75;
 squareLipWidthRemainder = 4;
 squareLipLengthRemainder = 15;
 
-spaceBetweenSquares = 3;
+spaceBetweenSquares = 1.5;
 
 
 wallThickness = 3;
@@ -63,50 +63,55 @@ difference(){
             
             
             
-    translate([length - (wallThickness + billboardTwoByOneTokenLength), wallThickness, height - billboardTwoByOneTokenHeight])
-        cube([billboardTwoByOneTokenLength,billboardTwoByOneTokenWidth, billboardTwoByOneTokenHeight]);
-    translate([
-        length - (wallThickness + billboardTwoByOneTokenLength - squareLipLengthRemainder),
-        wallThickness + squareLipWidthRemainder/2,
-        0])
-        cube([
-            billboardTwoByOneTokenLength + wallThickness - squareLipLengthRemainder,
-            billboardTwoByOneTokenWidth - squareLipWidthRemainder,
-            height]);
-    
-    translate([length - (wallThickness + billboardOneByOneTokenLength) , wallThickness + billboardTwoByOneTokenWidth + spaceBetweenSquares, height - billboardOneByOneTokenHeight])
+    translate([length - (wallThickness + billboardOneByOneTokenLength), wallThickness, height - billboardOneByOneTokenHeight])
         cube([billboardOneByOneTokenLength,billboardOneByOneTokenWidth, billboardOneByOneTokenHeight]);
     translate([
-        length - (wallThickness + billboardOneByOneTokenLength - squareLipLengthRemainder),
-        wallThickness + billboardTwoByOneTokenWidth + spaceBetweenSquares + squareLipWidthRemainder/2,
+        length - (wallThickness + billboardOneByOneTokenLength - squareLipWidthRemainder/2),
+        0,
         0])
         cube([
-            billboardOneByOneTokenLength + wallThickness - squareLipLengthRemainder,
-            billboardOneByOneTokenWidth - squareLipWidthRemainder,
+            billboardOneByOneTokenLength - squareLipWidthRemainder,
+            billboardOneByOneTokenWidth - squareLipLengthRemainder,
             height]);
             
-     translate([length - (wallThickness + billboardOneByOneTokenLength) , wallThickness + billboardTwoByOneTokenWidth + billboardOneByOneTokenWidth + spaceBetweenSquares * 2, height - billboardOneByOneTokenHeight])
-        cube([billboardOneByOneTokenLength,billboardOneByOneTokenWidth, billboardOneByOneTokenHeight]);
-    translate([
-        length - (wallThickness + billboardOneByOneTokenLength - squareLipLengthRemainder),
-        wallThickness + billboardTwoByOneTokenWidth + billboardOneByOneTokenWidth + spaceBetweenSquares * 2 + squareLipWidthRemainder/2,
-        0])
-        cube([
-            billboardOneByOneTokenLength + wallThickness - squareLipLengthRemainder,
-            billboardOneByOneTokenWidth - squareLipWidthRemainder,
-            height]);
-    
-    translate([length - (wallThickness + billboardThreeByOneTokenLength) , wallThickness + billboardTwoByOneTokenWidth + billboardOneByOneTokenWidth * 2 + spaceBetweenSquares * 3, height - billboardThreeByOneTokenHeight])
+    translate([length - (wallThickness + billboardThreeByOneTokenLength + spaceBetweenSquares + billboardTwoByOneTokenLength) , wallThickness, height - billboardThreeByOneTokenHeight])
         cube([billboardThreeByOneTokenLength,billboardThreeByOneTokenWidth, billboardThreeByOneTokenHeight]);
     translate([
-        length - (wallThickness + billboardThreeByOneTokenLength - squareLipLengthRemainder),
-        wallThickness + billboardTwoByOneTokenWidth + billboardOneByOneTokenWidth * 2 + spaceBetweenSquares * 3 + squareLipWidthRemainder/2,
+        length - (wallThickness + billboardThreeByOneTokenLength + spaceBetweenSquares + billboardTwoByOneTokenLength - squareLipWidthRemainder/2),
+        0,
         0])
         cube([
-            billboardThreeByOneTokenLength + wallThickness - squareLipLengthRemainder,
-            billboardThreeByOneTokenWidth - squareLipWidthRemainder,
+            billboardThreeByOneTokenLength - squareLipWidthRemainder,
+             billboardThreeByOneTokenWidth - squareLipLengthRemainder ,
             height]);
 
+
+
+
+    
+    translate([length - (wallThickness + billboardTwoByOneTokenLength) , width - (wallThickness + billboardTwoByOneTokenWidth), height - billboardTwoByOneTokenHeight])
+        cube([billboardTwoByOneTokenLength,billboardTwoByOneTokenWidth, billboardTwoByOneTokenHeight]);
+    translate([
+        length - (wallThickness + billboardTwoByOneTokenLength - squareLipWidthRemainder/2),
+        width - (billboardTwoByOneTokenWidth - squareLipLengthRemainder),
+        0])
+        cube([
+            billboardTwoByOneTokenLength - squareLipWidthRemainder,
+            billboardTwoByOneTokenWidth - squareLipLengthRemainder,
+            height]);
+            
+     translate([length - (wallThickness + billboardOneByOneTokenLength + billboardOneByOneTokenLength + spaceBetweenSquares) , width - (wallThickness + billboardOneByOneTokenWidth), height - billboardOneByOneTokenHeight])
+        cube([billboardOneByOneTokenLength,billboardOneByOneTokenWidth, billboardOneByOneTokenHeight]);
+    translate([
+        length - (wallThickness + billboardOneByOneTokenLength * 2 + spaceBetweenSquares - squareLipWidthRemainder/2),
+        width - (billboardOneByOneTokenWidth - squareLipLengthRemainder),
+        0])
+        cube([
+            billboardOneByOneTokenLength - squareLipWidthRemainder,
+            billboardOneByOneTokenWidth - squareLipLengthRemainder,
+            height]);
+    
+    
         
    
             
