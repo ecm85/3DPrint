@@ -1,5 +1,5 @@
-length = 100;
-width = 90;
+length = 105;
+width = 100;
 height = 7;
 
 //Based on magnet size:
@@ -16,13 +16,13 @@ billboardTwoByOneTokenWidth = 36.15 + .75;
 billboardTwoByOneTokenLength = 18.00 + .75;
 billboardTwoByOneTokenHeight = 1.75 + .75;
 
-billboardThreeByOneTokenWidth = 54.0 + .75;
-billboardThreeByOneTokenLength = 18.0  + .75;
-billboardThreeByOneTokenHeight = 1.75 + .75;
-
 billboardThreeByTwoTokenWidth = 53.8 + .75;
 billboardThreeByTwoTokenLength = 36.00 + .75;
 billboardThreeByTwoTokenHeight = 1.75 + .75;
+
+billboardFiveByTwoTokenWidth = 89.68 + .75;
+billboardFiveByTwoTokenLength = 36.00 + .75;
+billboardFiveByTwoTokenHeight = 1.75 + .75;
 
 squareLipWidthRemainder = 4;
 squareLipLengthRemainder = 15;
@@ -35,38 +35,37 @@ wallThickness = 3;
 difference(){
     cube([length, width, height]);
 
-    translate([wallThickness, wallThickness, height - billboardOneByOneTokenHeight])
-        cube([billboardOneByOneTokenLength,billboardOneByOneTokenWidth, billboardOneByOneTokenHeight]);
+    translate([wallThickness, width/2 - (billboardFiveByTwoTokenWidth/2), height - billboardFiveByTwoTokenHeight])
+        cube([billboardFiveByTwoTokenLength,billboardFiveByTwoTokenWidth, billboardFiveByTwoTokenHeight]);
     translate([
         0,
-       wallThickness + squareLipWidthRemainder/2,
+        width/2 - (billboardFiveByTwoTokenWidth/2) + squareLipWidthRemainder/2,
         0])
         cube([
-            billboardOneByOneTokenLength + wallThickness - squareLipLengthRemainder,
-            billboardOneByOneTokenWidth - squareLipWidthRemainder,
+            billboardFiveByTwoTokenLength + wallThickness - squareLipLengthRemainder,
+            billboardFiveByTwoTokenWidth - squareLipWidthRemainder,
             height]);
-    
-     
-    translate([wallThickness, width - (billboardThreeByTwoTokenWidth + wallThickness), height - billboardThreeByTwoTokenHeight])
+            
+            
+            
+            
+            
+            
+    translate([length - (wallThickness + billboardThreeByTwoTokenLength), wallThickness, height - billboardThreeByTwoTokenHeight])
         cube([billboardThreeByTwoTokenLength,billboardThreeByTwoTokenWidth, billboardThreeByTwoTokenHeight]);
     translate([
+        length - (wallThickness + billboardThreeByTwoTokenLength - squareLipWidthRemainder/2),
         0,
-        width - (billboardThreeByTwoTokenWidth + wallThickness) + squareLipWidthRemainder/2,
         0])
         cube([
-            billboardThreeByTwoTokenLength + wallThickness - squareLipLengthRemainder,
-            billboardThreeByTwoTokenWidth - squareLipWidthRemainder,
+            billboardThreeByTwoTokenLength - squareLipWidthRemainder,
+            billboardThreeByTwoTokenWidth - squareLipLengthRemainder,
             height]);
             
-            
-            
-            
-            
-            
-    translate([length - (wallThickness + billboardOneByOneTokenLength), wallThickness, height - billboardOneByOneTokenHeight])
+    translate([length - (wallThickness + billboardThreeByTwoTokenLength + spaceBetweenSquares + billboardOneByOneTokenLength), wallThickness, height - billboardOneByOneTokenHeight])
         cube([billboardOneByOneTokenLength,billboardOneByOneTokenWidth, billboardOneByOneTokenHeight]);
     translate([
-        length - (wallThickness + billboardOneByOneTokenLength - squareLipWidthRemainder/2),
+        length - (wallThickness + billboardOneByOneTokenLength + billboardThreeByTwoTokenLength + spaceBetweenSquares - squareLipWidthRemainder/2),
         0,
         0])
         cube([
@@ -74,16 +73,7 @@ difference(){
             billboardOneByOneTokenWidth - squareLipLengthRemainder,
             height]);
             
-    translate([length - (wallThickness + billboardThreeByOneTokenLength + spaceBetweenSquares + billboardTwoByOneTokenLength) , wallThickness, height - billboardThreeByOneTokenHeight])
-        cube([billboardThreeByOneTokenLength,billboardThreeByOneTokenWidth, billboardThreeByOneTokenHeight]);
-    translate([
-        length - (wallThickness + billboardThreeByOneTokenLength + spaceBetweenSquares + billboardTwoByOneTokenLength - squareLipWidthRemainder/2),
-        0,
-        0])
-        cube([
-            billboardThreeByOneTokenLength - squareLipWidthRemainder,
-             billboardThreeByOneTokenWidth - squareLipLengthRemainder ,
-            height]);
+    
 
 
 
@@ -111,7 +101,16 @@ difference(){
             billboardOneByOneTokenWidth - squareLipLengthRemainder,
             height]);
     
-    
+    translate([length - (wallThickness + billboardOneByOneTokenLength + billboardOneByOneTokenLength +billboardOneByOneTokenLength + spaceBetweenSquares + spaceBetweenSquares) , width - (wallThickness + billboardOneByOneTokenWidth), height - billboardOneByOneTokenHeight])
+        cube([billboardOneByOneTokenLength,billboardOneByOneTokenWidth, billboardOneByOneTokenHeight]);
+    translate([
+        length - (wallThickness + billboardOneByOneTokenLength * 3 + spaceBetweenSquares * 2 - squareLipWidthRemainder/2),
+        width - (billboardOneByOneTokenWidth - squareLipLengthRemainder),
+        0])
+        cube([
+            billboardOneByOneTokenLength - squareLipWidthRemainder,
+            billboardOneByOneTokenWidth - squareLipLengthRemainder,
+            height]);
         
    
             
