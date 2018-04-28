@@ -190,6 +190,8 @@ FCM:
 			89.68w x 36.00h
 		3x2
 			53.65w x 36.00h
+		3x1
+			54.0w x 18.00h
 		2x2
 			35.8w x36.00h 
 		2x1
@@ -207,3 +209,25 @@ Weeping Angel
 Grapnel headphone mount
 Tree for jeff
 Betrayal inserts
+
+
+OhMyGoods
+Cards:
+96x62 (use 65)
+stack 1 7
+stack 2 3.5
+stack 3 3.5
+stack 4 40
+rules folded 6
+
+caverna cvc
+	walls
+		10.8 + .5W x 48.1L + .5 x 14.67 + .5
+	supply tokens
+		14.23 + .5 (diameter) x 25.20 + .5 (length)
+	numbered tiles
+		20.12 + .5 side x 8.36 + .5 H
+	startin player
+		29.90 + .5 diameter x 2.08 + .05 H
+	personal player box
+		60x50x13
