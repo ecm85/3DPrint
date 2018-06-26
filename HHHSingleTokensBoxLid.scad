@@ -1,7 +1,7 @@
 length = 75;
 width = 75;
-height = 3;
-rimHeight = 5;
+height = 2;
+rimHeight = 1.5;
 rimThickness = 2;
 notchLength = 25;
 //Based on washer size:
@@ -57,7 +57,7 @@ union()
 
 module LeftLengthCircles()
 {
-    spaceBetweenCircles = 3;
+    spaceBetweenCircles = 2;
   
     translate(
         [
