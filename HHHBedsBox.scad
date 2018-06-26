@@ -1,5 +1,5 @@
-length = 110;
-width = 110;
+length = 105;
+width = 115;
 height = 11;
 
 //Based on magnet size:
@@ -21,12 +21,14 @@ bedTokenHeight = 8.1 + .5;
 spaceBetweenCircles = 2;
 wallThickness = spaceBetweenCircles;
 
-squareLipWidthRemainder = 2;
+squareLipWidthRemainder = 4;
 squareLipLengthRemainder = 4;
 
 difference(){
     cube([length, width, height]);
 
+
+//----------------------------------
 translate(
         [
             1 * length/5 - (bedTokenLength/2),
@@ -92,9 +94,7 @@ translate(
             bedTokenWidth - squareLipLengthRemainder,
             height]);
             
-    
-          
-
+//---------------------------------------------------------------------
 
     translate(
         [
@@ -159,9 +159,78 @@ translate(
             bedTokenLength - squareLipWidthRemainder,
             bedTokenWidth - squareLipLengthRemainder,
             height]);
+            
+// -----------------------------
+            
+translate(
+        [
+            wallThickness,
+            3 * width/5 - (bedTokenLength/2),
+            height - bedTokenHeight
+        ])
+        cube([bedTokenWidth,bedTokenLength, bedTokenHeight]);
+    translate([
+        0,
+        3 * width/5 - (bedTokenLength/2 - squareLipWidthRemainder/2),
+        0])
+        cube([
+            bedTokenWidth - squareLipLengthRemainder,
+            bedTokenLength - squareLipWidthRemainder,
+            height]);
    
-   
+    translate(
+        [
+            wallThickness,
+            2 * width/5 - (bedTokenLength/2),
+            height - bedTokenHeight
+        ])
+        cube([bedTokenWidth,bedTokenLength, bedTokenHeight]);
+    translate([
+        0,
+        2 * width/5 - (bedTokenLength/2 - squareLipWidthRemainder/2),
+        0])
+        cube([
+            bedTokenWidth - squareLipLengthRemainder,
+            bedTokenLength - squareLipWidthRemainder,
+            height]);
 
+
+//------------------------------
+
+
+    translate(
+        [
+            length - (wallThickness + bedTokenWidth),
+            3 * width/5 - (bedTokenLength/2),
+            height - bedTokenHeight
+        ])
+        cube([bedTokenWidth,bedTokenLength, bedTokenHeight]);
+    translate([
+        length - (bedTokenWidth - squareLipLengthRemainder),
+        3 * width/5 - (bedTokenLength/2 - squareLipWidthRemainder/2),
+        0])
+        cube([
+            bedTokenWidth - squareLipLengthRemainder,
+            bedTokenLength - squareLipWidthRemainder,
+            height]);
+   
+    translate(
+        [
+            length - (wallThickness + bedTokenWidth),
+            2 * width/5 - (bedTokenLength/2),
+            height - bedTokenHeight
+        ])
+        cube([bedTokenWidth,bedTokenLength, bedTokenHeight]);
+    translate([
+        length - (bedTokenWidth - squareLipLengthRemainder),
+        2 * width/5 - (bedTokenLength/2 - squareLipWidthRemainder/2),
+        0])
+        cube([
+            bedTokenWidth - squareLipLengthRemainder,
+            bedTokenLength - squareLipWidthRemainder,
+            height]);
+
+//----------------------------------------
    
     translate([length/2, width/2, height - magnetHeight])
         cylinder(magnetHeight, d=magnetBaseInnerDiameter);
