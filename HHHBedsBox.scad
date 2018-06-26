@@ -1,5 +1,5 @@
-length = 105;
-width = 115;
+length = 88;
+width = 113;
 height = 11;
 
 //Based on magnet size:
@@ -29,137 +29,24 @@ difference(){
 
 
 //----------------------------------
-translate(
-        [
-            1 * length/5 - (bedTokenLength/2),
-            wallThickness,
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        1 * length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        0,
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
-
-
-    translate(
-        [
-            2 * length/5 - (bedTokenLength/2),
-            wallThickness,
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        2 * length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        0,
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
-
-    translate(
-        [
-            3 * length/5 - (bedTokenLength/2),
-            wallThickness,
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        3 * length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        0,
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
-            
-    translate(
-        [
-            4 * length/5 - (bedTokenLength/2),
-            wallThickness,
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        4 * length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        0,
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
+LeftBedToken();
+translate([bedTokenLength + wallThickness, 0, 0])
+    LeftBedToken();
+translate([2 * (bedTokenLength + wallThickness), 0, 0])
+    LeftBedToken();
+translate([3 * (bedTokenLength + wallThickness), 0, 0])
+    LeftBedToken();
+   
             
 //---------------------------------------------------------------------
 
-    translate(
-        [
-            length/5 - (bedTokenLength/2),
-            width - (bedTokenWidth + wallThickness),
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        width - (bedTokenWidth - squareLipLengthRemainder),
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
-            
-    translate(
-        [
-            2 * length/5 - (bedTokenLength/2),
-            width - (bedTokenWidth + wallThickness),
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        2 * length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        width - (bedTokenWidth - squareLipLengthRemainder),
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
-            
-    translate(
-        [
-            3 * length/5 - (bedTokenLength/2),
-            width - (bedTokenWidth + wallThickness),
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        3 * length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        width - (bedTokenWidth - squareLipLengthRemainder),
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
-            
-    translate(
-        [
-            4 * length/5 - (bedTokenLength/2),
-            width - (bedTokenWidth + wallThickness),
-            height - bedTokenHeight
-        ])
-        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
-    translate([
-        4 * length/5 - (bedTokenLength - squareLipWidthRemainder)/2,
-        width - (bedTokenWidth - squareLipLengthRemainder),
-        0])
-        cube([
-            bedTokenLength - squareLipWidthRemainder,
-            bedTokenWidth - squareLipLengthRemainder,
-            height]);
-            
+    RightBedToken();
+translate([bedTokenLength + wallThickness, 0, 0])
+    RightBedToken();
+translate([2 * (bedTokenLength + wallThickness), 0, 0])
+    RightBedToken();
+translate([3 * (bedTokenLength + wallThickness), 0, 0])
+    RightBedToken();        
 // -----------------------------
             
 translate(
@@ -238,3 +125,41 @@ translate(
 
 }
 
+
+module LeftBedToken()
+{
+    translate(
+        [
+            wallThickness,
+            wallThickness,
+            height - bedTokenHeight
+        ])
+        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
+    translate([
+        wallThickness + squareLipWidthRemainder/2,
+        0,
+        0])
+        cube([
+            bedTokenLength - squareLipWidthRemainder,
+            bedTokenWidth - squareLipLengthRemainder,
+            height]);
+}
+
+module RightBedToken()
+{
+    translate(
+        [
+            wallThickness,
+            width - (wallThickness + bedTokenWidth),
+            height - bedTokenHeight
+        ])
+        cube([bedTokenLength,bedTokenWidth, bedTokenHeight]);
+    translate([
+        wallThickness + squareLipWidthRemainder/2,
+        width - (bedTokenWidth - squareLipLengthRemainder),
+        0])
+        cube([
+            bedTokenLength - squareLipWidthRemainder,
+            bedTokenWidth - squareLipLengthRemainder,
+            height]);
+}
