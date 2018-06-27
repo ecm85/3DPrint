@@ -1,5 +1,5 @@
 length = 88;
-width = 113;
+width = 92;
 
 height = 3;
 rimHeight = 5;
