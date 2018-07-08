@@ -262,16 +262,20 @@ worlds fair:
 	pile 5 10.78 thick
 	pile 6 12.94 thick
 	single 2.17 thick 
+	17.8 x 17.8
 
 	grave tokens
 	12 
 	two stacks of six
 	single 2.05 thick 
 	one stack 12.44 thick
-	grave rounded part diameter of 15.29
 	total length 25 even 
-	wid at base 18.9 
-	wid of body 15.29
+	3 sections:
+		1. rounded tip - diameter 15.29
+		2. body - 15.29 width, 9.15 height
+		3. base - 18.9 width, 7.8 height
+
+
 
 	Max total height of box included lid
 	27.75
