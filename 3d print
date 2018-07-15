@@ -279,3 +279,56 @@ worlds fair:
 
 	Max total height of box included lid
 	27.75
+
+
+Gloomhaven
+	All tokens 2 mm high
+	Demon/Undead section
+		Demon box (demons x 6)
+			sun demon x 6, 39.09 x 28.26, base26.57
+			earth demon x 6, 50.66 x 36.78, base 30.52
+			night demon x 6, 39.16 x 28.63x base 27
+			wind demon x 6, 39.79 x 28.91, full (ish) base
+			flame demon x 6, 40.08 x 28.11x base 22.29
+			frost demon x 6, 39.11 x 26.84, base 21.59
+		Undead box (undead x 4 types, 5 stacks)
+			living bones (2 stacks of 5) 36.44 x 23.46, base 19.15
+			living spirit x 6, 35.87 x 23.9, 22.87 base
+			living corpse x 6, 35.73 x 24.06, full (ish) base
+			cultist x 6, 35.69 x 20.64x full (ish) base
+	misc section
+		TODO: Arrange misc box 1 + 2 better?
+		misc box 1 (harrower, scout, golem)
+			lurker x 6, 47.02 x 34.26, base 32.70
+			deep terror (2 stacks of 5), 31.83 x 23.94, base 22.49
+			slime (2 stacks of 5) 35.21 x 27.84, full (ish) base
+		misc box 2 (slime x 2 stacks, artillery, lurker, deep terror)
+			scout (2 stacks of 5) 30.60 x 21.05, base 19.37
+			golem x 6, 52.5 x 36.61, base full ish
+			artillery x 6, 34.49 x 28.27, base full ish
+			harrower x4, 41.04 x 25.4, base 18.7
+	imp/beast/savvas/drake section
+		imp box
+			black imp (2 stacks of 5) 29.76 x 23.92, full (ish) base
+			forest imp (2 stacks of 5) 28.25 x 22.28, base 17.44
+		beast box
+			hound x 6, 26.87 x 23,54, base 20.75
+			giant viper (2 stacks of 5) 29.35 x 21.34, base fullish
+			cave bear x 4, 34.94 x 26.46, base fullish
+		savvas/drake box
+			savvas lavaflow x 4, 38.8 x 26.6, base fullish
+			savvas icestorm x 4, 42.01 x 28.09, base fullish 
+			rending drake x 6, 29.60 x 22.84, base 20.29
+			spitting drake x 6, 34.86 x 24.77, base 21.18
+	archer/guard/shaman section
+		archer box
+			inox archer x 6, 49.37 x 36.16, base 24.49
+			bandit archer x 6, 37.31 x 24.54, base fullish
+			city archer x 6, 36.84 x 24.22, base 22.97
+		guard box
+			inox guard x 6, 47.87 x 31.97, base 29.36
+			bandit guard x 6, 36.67 x 27.75, base 24.43
+			city guard x 6, 38.45 x 24.02, base 21.30
+		shaman box
+			inox shaman x 6, 47.35 x 30.94, base 26.84
+			vermling shaman (2 stacks of 5), 30.51 x 22.44, base 20.9
