@@ -332,3 +332,11 @@ Gloomhaven
 		shaman box
 			inox shaman x 6, 47.35 x 30.94, base 26.84
 			vermling shaman (2 stacks of 5), 30.51 x 22.44, base 20.9
+		max box size:
+			superset:
+				49.37 x 36.16
+				38.45 x 27.75
+				38.45 x 27.75
+				cutout for magnet: 20x20
+				total width: 2 + 49.37 + 2 + 19 + 2 + 38.45 + 2 = 114.82
+				total length: 2 + 27.75 + 2 + 27.75 + 2
