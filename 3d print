@@ -299,27 +299,40 @@ Gloomhaven
 	misc section
 		TODO: Arrange misc box 1 + 2 better?
 		misc box 1 (harrower, scout, golem)
-			lurker x 6, 47.02 x 34.26, base 32.70
-			deep terror (2 stacks of 5), 31.83 x 23.94, base 22.49
-			slime (2 stacks of 5) 35.21 x 27.84, full (ish) base
+			lurker x 6, 					47.02 x 34.26, base 32.70
+			deep terror (2 stacks of 5), 	31.83 x 23.94, base 22.49
 		misc box 2 (slime x 2 stacks, artillery, lurker, deep terror)
-			scout (2 stacks of 5) 30.60 x 21.05, base 19.37
-			golem x 6, 52.5 x 36.61, base full ish
-			artillery x 6, 34.49 x 28.27, base full ish
-			harrower x4, 41.04 x 25.4, base 18.7
+			golem x 6, 						52.50 x 36.61, base full ish
+			scout (2 stacks of 5) 			30.60 x 21.05, base 19.37
+		misc box 3 (top  width 53.67, bottom width 55.68)
+			harrower x4, 					41.04 x 25.4, base 18.7
+			artillery x 6, 					34.49 x 28.27, base full ish
+			slime (2 stacks of 5) 			35.21 x 27.84, full (ish) base
+		max box side:
+			2 + 52.50 + 2 + 19 + 2 + 35.21 + 2 = 114.71
+			2 + 27.84 + 2 + 27.84 + 2 = 61.68
+
 	imp/beast/savvas/drake section
 		imp box
 			black imp (2 stacks of 5) 29.76 x 23.92, full (ish) base
 			forest imp (2 stacks of 5) 28.25 x 22.28, base 17.44
 		beast box
+			cave bear x 4, 34.94 x 26.46, base fullish
 			hound x 6, 26.87 x 23,54, base 20.75
 			giant viper (2 stacks of 5) 29.35 x 21.34, base fullish
-			cave bear x 4, 34.94 x 26.46, base fullish
 		savvas/drake box
+			savvas icestorm x 4, 42.01 x 28.09, base fullish
 			savvas lavaflow x 4, 38.8 x 26.6, base fullish
-			savvas icestorm x 4, 42.01 x 28.09, base fullish 
-			rending drake x 6, 29.60 x 22.84, base 20.29
 			spitting drake x 6, 34.86 x 24.77, base 21.18
+			rending drake x 6, 29.60 x 22.84, base 20.29
+		max box side:
+			42.01 x 28.09
+			38.8 x 26.6
+			34.86 x 24.77
+			29.60 x 22.84
+			cutout for magnet: 19
+			total width: 2 + 42.01 + 2 + 19 + 2 + 34.86 + 2 = 103.87
+			total length: 2 + 28.09 + 2 + 26.6 + 2 = 60.69
 	archer/guard/shaman section
 		archer box
 			inox archer x 6, 49.37 x 36.16, base 24.49
