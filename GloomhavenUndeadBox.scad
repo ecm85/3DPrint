@@ -71,18 +71,18 @@ translate(
             
 translate(
         [
-            length - (wallThickness + token6Length + 15),
+            length - (wallThickness + token3Length + 15),
             wallThickness,
-            height - token6Height
+            height - token3Height
         ])
-        cube([token6Length,token6Width, token6Height]);
+        cube([token3Length,token3Width, token3Height]);
     translate([
-        length - (wallThickness + token6Length + 15) + token6SquareLipWidthRemainder/2,
+        length - (wallThickness + token3Length + 15) + token3SquareLipWidthRemainder/2,
         0,
         0])
         cube([
-            token6Length - token6SquareLipWidthRemainder,
-            token6Width - token6SquareLipLengthRemainder,
+            token3Length - token3SquareLipWidthRemainder,
+            token3Width - token3SquareLipLengthRemainder,
             height]);
 
             
