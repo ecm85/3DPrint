@@ -341,7 +341,7 @@ Gloomhaven
 			cutout for magnet: 19
 			total width: 2 + 42.01 + 2 + 19 + 2 + 34.86 + 2 = 103.87
 			total length: 2 + 28.09 + 2 + 26.6 + 2 = 60.69
-			
+
 	archer/guard/shaman section
 		archer box
 			inox archer x 6, 49.37 x 36.16, base 24.49
@@ -362,3 +362,60 @@ Gloomhaven
 				cutout for magnet: 20x20
 				total width: 2 + 49.37 + 2 + 19 + 2 + 38.45 + 2 = 114.82
 				total length: 2 + 27.75 + 2 + 27.75 + 2
+
+	boss section
+		elder drake 80.82 x 72.9
+		
+		prime demon 59.83 x 42.17
+		captain of the guard 44.03 x 29.08
+		jekserah 43.04 x 30.13
+		dark rider 53.24 x 38.5
+		
+		
+
+		winged horror 52.02 x 39.65
+		bandit commander 45.08 x 28.41
+		the betrayer 45.22 x 33.91
+		The colorless 50.55 x 32.70
+
+		inox bodyguards (2) 49.88 x 33.85
+		merciless overseer 45.39 x 33.22
+		the sightless eye 48.21 x 33.23
+		the gloom 49.10 x 36.29
+				
+
+		min drake box size: 2 + 19 + 3 + 80.82 + 2 =  107 x 78
+		min box size:
+				dim1: 2 + 59.83 + 4 + 43.04 + 2 = 110.87
+				dim2: 2 + 42.17 + 3 + 19 + 3 + 29.08 + 2 = 110
+
+
+
+	labels:
+		inox archer
+		bandit archer, city archer
+		inox guard
+		bandit guard, city guard
+		inox shaman
+		vermling shaman
+
+		black imp
+		forest imp
+		cave bear
+		hound, giant viper
+		savvas icestorm, savvas lavaflow
+		spitting drake, rending drake
+
+		lurker
+		deep terror
+		golem
+		scout
+		harrower infester, artillery
+		slime
+
+		earth demon, flame demon, night demon
+		wind demon, frost demon, sun demon
+		cultist, living spirit
+		living bones, living corpse
+
+		
