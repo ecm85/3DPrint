@@ -1,6 +1,6 @@
 length = 110;
 width = 110;
-height = 5;
+height = 15;
 
 //Based on magnet size:
 magnetBaseInnerDiameter = 19;

@@ -11,7 +11,7 @@ magnetHeight = 4.0;
 
 spaceBetweenCircles = 2;
 wallThickness = spaceBetweenCircles;
-pillarHeight = 5 + 5 + 5 + 7 + .5 + height;
+pillarHeight = 15 * 4 + .5 + height;
 
 difference() {
 union(){
