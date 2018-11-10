@@ -1,11 +1,11 @@
 hourglassHeight = 25.19 + .5;
 hourglassDiameter = 14.44 + .5;
-hourglassProtrusionHeight = 3;
+hourglassProtrusionHeight = 5;
 length = 74;
 width = 105;
 floorHeight = 3;
 height = (hourglassHeight - hourglassProtrusionHeight) + floorHeight;
-totalHeight = height + 20;
+totalHeight = height + 23;
 magnetPadding = 15;
 magnetBaseInnerDiameter = 15.4;
 magnetHeight = 4.0;
@@ -20,7 +20,8 @@ largeWoodenCubeSide = 10.4 + .5;
 largeWoodenCubeBoxHeight = largeWoodenCubeSide;
 largeWoodenCubeBoxWidth = largeWoodenCubeSide;
 
-wallThickness = 2;
+wallThickness = 6;
+lipThickness = 2;
 
 fingerNotchSize = 11;
 woodenCubeCount = 3;
@@ -31,7 +32,7 @@ largeWoodenCubeBoxLength = largeWoodenCubeSide * largeWoodenCubeCount + .5;
 meepleBoxWidth = 10.31 + .5;
 meepleBoxLength = 16.36 + .5;
 meepleHeight = 16.14 + .5;
-meepleHeightProtrusion = 3;
+meepleHeightProtrusion = 6;
 meepleBoxHeight = meepleHeight - meepleHeightProtrusion;
 
 
@@ -54,8 +55,8 @@ meepleBoxHeight = meepleHeight - meepleHeightProtrusion;
     difference() {    
         union() {
             difference(){
-                translate([-wallThickness, -wallThickness, 0])
-                    cube([length + wallThickness * 2, width + wallThickness * 2, totalHeight]);
+                translate([-lipThickness, -lipThickness, 0])
+                    cube([length + lipThickness * 2, width + lipThickness * 2, totalHeight]);
                 translate([0, 0, height])
                     cube([length, width, totalHeight - height]);
                 
@@ -116,26 +117,29 @@ meepleBoxHeight = meepleHeight - meepleHeightProtrusion;
             difference(){
                 translate([0, 0, hourglassHeight + 2])
                     cube([length, width, 2]);
-                translate([wallThickness, wallThickness, hourglassHeight + 2])
-                    cube([length - wallThickness * 2, width - wallThickness * 2, 2]);
+                translate([lipThickness, lipThickness, hourglassHeight + 2])
+                    cube([length - lipThickness * 2, width - lipThickness * 2, 2]);
             }
             difference(){
                 translate([0, 0, hourglassHeight + 2 + 2 + 2])
                     cube([length, width, 2]);
-                translate([wallThickness, wallThickness, hourglassHeight + 2 + 2 + 2])
-                    cube([length - wallThickness * 2, width - wallThickness * 2, 2]);
+                translate([lipThickness, lipThickness, hourglassHeight + 2 + 2 + 2])
+                    cube([length - lipThickness * 2, width - lipThickness * 2, 2]);
             }
             
             difference(){
                 translate([0, 0, hourglassHeight + 2 + 2 + 2 + 2 + 2])
                     cube([length, width, 2]);
-                translate([wallThickness, wallThickness, hourglassHeight + 2 + 2 + 2 + 2 + 2])
-                    cube([length - wallThickness * 2, width - wallThickness * 2, 2]);
+                translate([lipThickness, lipThickness, hourglassHeight + 2 + 2 + 2 + 2 + 2])
+                    cube([length - lipThickness * 2, width - lipThickness * 2, 2]);
             }
         }
-        translate([0, width - wallThickness, floorHeight + hourglassHeight + 1])
-            cube([length - (2 * wallThickness), wallThickness * 2, totalHeight - hourglassHeight]);
+        translate([0, width - lipThickness, floorHeight + hourglassHeight + 1])
+            cube([length, wallThickness * 2, totalHeight - hourglassHeight]);
     }
+    
+    
+    
 module WoodenCubeBox()
 {
     translate([0, 0, height - (woodenCubeBoxHeight/2)])
