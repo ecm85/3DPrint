@@ -1,10 +1,10 @@
-length = 2 * 110/3;
-width = 110;
-height = 35;
+length = 100;
+width = 100;
+height = 25;
 wallThickness = 2;
 floorThickness = 3;
-widthDividers = 0;
-lengthDividers = 1;
+widthDividers = 1;
+lengthDividers = 2;
 widthDividerToSkip = -1;
 
 //Based on magnet size:
