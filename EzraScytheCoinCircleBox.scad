@@ -1,5 +1,5 @@
 length = 111; 
-width = 65;
+width = 69;
 height = 34;
 
 floorThickness = 3;
@@ -59,27 +59,14 @@ difference(){
         translate([oneCoinDiameter + threeCoinDiameter + tenCoinDiameter + twentyCoinDiameter/2 + spaceBetweenCircles * 4, width - (twentyCoinDiameter/2 - coinOffset), height - twentyCoinHeight])
         cylinder(twentyCoinHeight, d=twentyCoinDiameter);
 
-//    translate([length /2 - (smallCircleDiameter/2 + spaceBetweenCircles / 2), width - (smallCircleDiameter/2 - smallCircleOffset), floorThickness])
-//        cylinder(height - floorThickness, d=smallCircleDiameter);
-//    
-//    translate([length /2 + (smallCircleDiameter/2 + spaceBetweenCircles / 2), width - (smallCircleDiameter/2 - smallCircleOffset), floorThickness])
-//        cylinder(height - floorThickness, d=smallCircleDiameter);
-//    
-//    translate([length - (smallCircleDiameter/2 + spaceBetweenCircles), width - (smallCircleDiameter/2 - smallCircleOffset), floorThickness])
-//        cylinder(height - floorThickness, d=smallCircleDiameter);
-//    
-    
-
-//
-//    translate([largeCircleDiameter/2 + spaceBetweenCircles - largeCircleOffset, width/2, floorThickness])
-//        cylinder(height - floorThickness, d=largeCircleDiameter);
-//
-//    translate([length - (largeCircleDiameter/2 + spaceBetweenCircles - largeCircleOffset), width/2, floorThickness])
-//        cylinder(height - floorThickness, d=largeCircleDiameter);
         
     translate([length/2, width/2, height - magnetHeight])
         cylinder(magnetHeight, d=magnetBaseInnerDiameter);
         
-
+    translate([(1 * length/6), width/2 + 8, height - magnetHeight])
+        cylinder(magnetHeight, d=magnetBaseInnerDiameter);
+        
+    translate([5 * length/6, width/2 - 8, height - magnetHeight])
+        cylinder(magnetHeight, d=magnetBaseInnerDiameter);
 }
 
