@@ -20,6 +20,10 @@ union()
             cube([totalLength, totalWidth + 2 * extraLidForCircles, height]);
         translate([totalLength/2, totalWidth/2, height - washerHeight])
             cylinder(washerHeight, d=washerDiameter);
+        translate([1 * totalLength/6, totalWidth/2 - 8, height - washerHeight])
+            cylinder(washerHeight, d=washerDiameter);
+        translate([5 * totalLength/6, totalWidth/2 + 8, height - washerHeight])
+            cylinder(washerHeight, d=washerDiameter);
     }
     
     difference() {
