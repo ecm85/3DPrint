@@ -1,4 +1,4 @@
-include<ColonistsGoodsBase.scad>
+include<ColonistsGoodsLib.scad>
 difference() {
     testBoxHeight = goodPileHeight + 3;
     testBoxLength = 100;

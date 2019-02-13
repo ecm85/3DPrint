@@ -1,4 +1,4 @@
-include<ColonistsGoodsBase.scad>
+include<ColonistsGoodsLib.scad>
     magnetHoleWidth = 19;
     floorThickness = 3;
     wallThickness = 3;

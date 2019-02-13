@@ -1,4 +1,4 @@
-include<ColonistsGoodsBase.scad>
+include<ColonistsGoodsLib.scad>
 wallThickness = 3;
 length = 65;
 width = (singleGoodPileLength + wallThickness) * 4 + wallThickness * 3;
