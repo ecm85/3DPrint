@@ -6,9 +6,9 @@ include<ColonistsGoodsBase.scad>
     length = 65;
     width = (singleGoodPileLength + wallThickness) * 4 + wallThickness * 3;
     numberOfTopBoxes = 3;
-    numberOfBottomBoxes = 3;
-    numberOfLeftBoxes = 1;
-    numberOfRightBoxes = 1;
+    numberOfBottomBoxes = 2;
+    numberOfLeftBoxes = 2;
+    numberOfRightBoxes = 2;
 
 difference() {
 
@@ -17,11 +17,12 @@ difference() {
     
     cube([length, width, height]);
 
-    whiteSpaceBetweenTopBoxes = (length - (numberOfTopBoxes * singleGoodPileLength)) / (numberOfTopBoxes + 1);
-    whiteSpaceBetweenBottomBoxes = (length - (numberOfBottomBoxes * singleGoodPileLength)) / (numberOfBottomBoxes + 1);
-    whiteSpaceBetweenLeftBoxes = (width - ((numberOfLeftBoxes + 2) * singleGoodPileWidth)) / (numberOfLeftBoxes + 1);
-    whiteSpaceBetweenRightBoxes = (width - ((numberOfRightBoxes + 2) * singleGoodPileWidth)) / (numberOfRightBoxes + 1);
-    
+    whiteSpaceBetweenTopBoxes = whiteSpaceBetweenBoxes(length, numberOfTopBoxes, singleGoodPileLength);
+    whiteSpaceBetweenBottomBoxes = whiteSpaceBetweenBoxes(length, numberOfBottomBoxes, singleGoodPileLength);
+    remainingWidth = width - (2 * singleGoodPileWidth);
+    whiteSpaceBetweenLeftBoxes = whiteSpaceBetweenBoxes(remainingWidth, numberOfLeftBoxes, singleGoodPileLength);
+    whiteSpaceBetweenRightBoxes = whiteSpaceBetweenBoxes(remainingWidth, numberOfRightBoxes, singleGoodPileLength);
+
     for(i=[0:numberOfBottomBoxes - 1]){
         translate([((i + 1) * whiteSpaceBetweenBottomBoxes + singleGoodPileLength * (i)) - wallThickness, 0, 0])
             BottomGoodPile(wallThickness, height);
@@ -44,3 +45,6 @@ difference() {
     translate([length/2 - magnetHoleWidth/2, width/2 - magnetHoleWidth/2, 0])
         cube([magnetHoleWidth, magnetHoleWidth, height]);
 }
+
+function whiteSpaceBetweenBoxes(side, numberOfBoxes, boxLength) =
+    (side - (numberOfBoxes * boxLength)) / (numberOfBoxes + 1);
