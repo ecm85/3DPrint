@@ -427,14 +427,44 @@ Gloomhaven
 			meeple 16.14 height, 16.36 x 10.31
 
 	the colonists
+		to print:
+			Goods:
+				ColonistsGoodsBox_3x3x1x1.stl
+				ColonistsGoodsBox_3x2x2x2.stl
+				lid (should be 65x86.4, use formula)
+			Residences:
+				ColonistsBuildingsBox_2x3_8.stl
+				ColonistsBuildingsBox_2x2_8.stl
+				base (should be 100x100)
+				lid
+			embassies:
+				3 x ColonistsBuildingsBox_3x3_4.stl
+				base (should be 100x100)
+				lid
+			other buildings:
+				ColonistsBuildingsBox_3x3_12x13x10x6x6x10.stl
+				ColonistsBuildingsBox_2x2x1_10x10x10x10x9.stl
+				ColonistsBuildingsBox_3x2_4x4x4x4x8.stl
+				base (should be 110x110)
+				lid
+			
+
+
 		residences
 			25.82 by 32.82 by 2.13
-			32 farm/estate
-			24 flat/apartment (1/2)
-			16 house/community hall (3)
+			32 farm/estate - 8x4
+			24 flat/apartment (1/2) - 8x3
+			16 house/community hall (3) - 8x2
+			1 tray 2x2_x8
+			1 tray 2x3_x8
+			1 base TODO
+			1 lid TODO
 		embassies
 			25.82 by 32.82 by 2.13
 			9 x 4 x 2
+			3 of 3x3_x4
+			1 base TODO
+			1 lid TODO
 		resources
 			15.05 by 14.95 by 2.15
 
@@ -488,12 +518,16 @@ Gloomhaven
 
 		production buildings
 			25.82 by 32.82 by 2.13
+			(12/13)-(10/10)-(10/10)-(10-10)-(6-6)-9
+
 			25 foresters house/hollow
 			20 factory/casino (1/4)
+			6/6 tailor shop / textile mill (3/4)
+
 			20 hunting lodge/hunting grounds (1/3)
 			20 pub/theater (1/2)
-			12 tailor shop / textile mill (3/4)
 			9 iron mine (2)
+
 		other buildings
 			25.82 by 32.82 by 2.13
 			4 library
@@ -501,6 +535,7 @@ Gloomhaven
 			4 institute (2)
 			4 stables (3)
 			4 customs office (3)
+
 		storage facilities
 			59.85 by 19.70 by 2.10
 			12 x 3 (1, 2, 4)
