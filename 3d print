@@ -447,7 +447,16 @@ Gloomhaven
 				ColonistsBuildingsBox_3x2_4x4x4x4x8.stl
 				ColonistsOtherBuildingsBase.stl
 				EzraBoxLid110x110WithLip5x2WithNotches.stl
-			
+			Coins:
+				ColonistsCoins.stl
+				ColonistsCoinsLid.stl
+		design:
+			storage facilities
+			tools
+			places
+			per player
+			colonists
+			misc
 
 
 		residences
