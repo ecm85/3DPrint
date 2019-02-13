@@ -431,22 +431,22 @@ Gloomhaven
 			Goods:
 				ColonistsGoodsBox_3x3x1x1.stl
 				ColonistsGoodsBox_3x2x2x2.stl
-				lid (should be 65x86.4, use formula)
+				ColonistsGoodsBoxLid.stl
 			Residences:
 				ColonistsBuildingsBox_2x3_8.stl
 				ColonistsBuildingsBox_2x2_8.stl
-				base (should be 100x100)
-				lid
+				ColonistsResidencesBase.stl
+				EzraBoxLid100x100WithLip5x2WithNotches.stl
 			embassies:
 				3 x ColonistsBuildingsBox_3x3_4.stl
-				base (should be 100x100)
-				lid
+				ColonistsEmbassiesBase.stl
+				EzraBoxLid100x100WithLip5x2WithNotches.stl
 			other buildings:
 				ColonistsBuildingsBox_3x3_12x13x10x6x6x10.stl
 				ColonistsBuildingsBox_2x2x1_10x10x10x10x9.stl
 				ColonistsBuildingsBox_3x2_4x4x4x4x8.stl
-				base (should be 110x110)
-				lid
+				ColonistsOtherBuildingsBase.stl
+				EzraBoxLid110x110WithLip5x2WithNotches.stl
 			
 
 
