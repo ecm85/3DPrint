@@ -429,8 +429,7 @@ Gloomhaven
 	the colonists
 		to print:
 			Goods:
-				ColonistsGoodsBox_3x3x1x1.stl
-				ColonistsGoodsBox_3x2x2x2.stl
+				
 				ColonistsGoodsBoxLid.stl
 			Residences:
 				ColonistsBuildingsBox_2x3_8.stl
