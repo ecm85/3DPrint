@@ -9,7 +9,7 @@ height = 3;
 magnetHoleWidth = 19;
 floorThickness = 3;
 
-pillarHeight = (goodPileHeight * 4)+ .5 + height;
+pillarHeight = ((goodPileHeight + floorThickness) * 4)+ .5 + height;
 echo (pillarHeight);
 
 //Based on magnet size:
