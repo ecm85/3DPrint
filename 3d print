@@ -450,15 +450,18 @@ Gloomhaven
 			Coins:
 				ColonistsCoins.stl
 				ColonistsCoinsLid.stl
+			Places:
+				ColonistsPlacePileBox.stl
+				Lid (copy from ClankSetupTokenBoxMarkIILid.scad)
 		design:
 			storage facilities
 			tools
-			places
 			per player
 			colonists
 			misc
-
-
+		measure:
+			re-measure storage tiles
+			measure tools
 		residences
 			25.82 by 32.82 by 2.13
 			32 farm/estate - 8x4
