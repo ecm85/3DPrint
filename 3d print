@@ -429,14 +429,11 @@ pursuit of happiness:
 the colonists
 	to print:
 		Goods:
-			ColonistsGoodsBoxLid.stl
 			(needs design) 2 bases
 		Residences:
-			EzraBoxLid100x100WithLip5x2WithNotches.stl
 		embassies:
 			3 x ColonistsBuildingsBox_3x3_4.stl
 			ColonistsEmbassiesBase.stl
-			EzraBoxLid100x100WithLip5x2WithNotches.stl
 		other buildings:
 			ColonistsBuildingsBox_3x3_12x13x10x6x6x10.stl
 			ColonistsBuildingsBox_2x2x1_10x10x10x10x9.stl
