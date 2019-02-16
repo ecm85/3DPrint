@@ -454,7 +454,6 @@ the colonists
 		colonists
 		misc
 	measure:
-		re-measure storage tiles
 		measure tools
 	residences
 		25.82 by 32.82 by 2.13
@@ -543,14 +542,15 @@ the colonists
 		4 customs office (3)
 
 	storage facilities
-		59.85 by 19.70 by 2.10
+		45.19 by 45.08 by 2.15
 		12 x 3 (1, 2, 4)
 	places (1,2,3,4)
 		hexes flat to flat 38.15 by 2.12
 		12, 12, 12, 12
 	per player:
 		4 stewards
-		2 warehouse extensions, 1 basic storage upgrade
+		2 Warehouse extension 59.86 by 20.21 by 2.10
+		1 Basic storage upgrade 59.85 by 19.70 by 2.10
 	tools
 		20 1x, 20 3x
 	coins
