@@ -448,6 +448,7 @@ the colonists
 			Lid (copy from ClankSetupTokenBoxMarkIILid.scad)
 	design:
 		Goods base box x 2
+		places lid
 		storage facilities
 		tools
 		per player
@@ -546,7 +547,7 @@ the colonists
 		12 x 3 (1, 2, 4)
 	places (1,2,3,4)
 		hexes flat to flat 38.15 by 2.12
-		12, 12, 12, 12
+		12, 12, 12, 12, 12
 	per player:
 		4 stewards
 		2 Warehouse extension 59.86 by 20.21 by 2.10
