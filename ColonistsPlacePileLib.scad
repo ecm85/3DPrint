@@ -3,7 +3,7 @@ include<HexPileLib.scad>
 singlePlacePileHeight = 2.15;
 //flat to flat = d = 38.15
 //D = d * 2/rt(3)
-d = 38.15;
+d = 38.15 + .8;
 D = d * 2/sqrt(3);
 singlePlacePileDiameter = D;
 

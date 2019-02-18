@@ -3,7 +3,7 @@ include<ColonistsPlacePileLib.scad>
 magnetBaseInnerDiameter = 15.4;
 magnetHeight = 4.0;
 floorHeight = 3;
-tileCount = 12;
+tileCount = 5;
 height = placePileHeight(tileCount) + floorHeight;
 length = singlePlacePileDiameter * .9;
 width = singlePlacePileDiameter;

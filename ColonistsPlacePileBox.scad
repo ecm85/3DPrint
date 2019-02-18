@@ -5,8 +5,8 @@ magnetHeight = 4.0;
 floorHeight = 3;
 tileCount = 12;
 height = placePileHeight(tileCount) + floorHeight;
-length = 108;
-width = 95;
+length = 110;
+width = 98;
 wallThickness = 3;
 
 difference() {
