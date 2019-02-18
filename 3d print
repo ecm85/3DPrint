@@ -429,23 +429,19 @@ pursuit of happiness:
 the colonists
 	to print:
 		Goods:
-			(needs design) 2 bases
 		Residences:
 		embassies:
 		other buildings:
-			ColonistsBuildingsBox_3x3_12x13x10x6x6x10.stl
-			ColonistsBuildingsBox_2x2x1_10x10x10x10x9.stl
-			ColonistsBuildingsBox_3x2_4x4x4x4x8.stl
-			ColonistsOtherBuildingsBase.stl
-			EzraBoxLid110x110WithLip5x2WithNotches.stl
 		Coins:
 			ColonistsCoins.stl
 			ColonistsCoinsLid.stl
 		Places:
 			ColonistsPlacePileBox.stl
 			Lid (copy from ClankSetupTokenBoxMarkIILid.scad)
+		Storage facilities:
+			ColonistsStorageFacilityBox.stl 
+			EzraBoxLid115x115WithLip5x2WithNotches.stl
 	design:
-		Goods base box x 2
 		places lid
 		storage facilities
 		tools
