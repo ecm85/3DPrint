@@ -436,8 +436,6 @@ the colonists
 			ColonistsCoins.stl
 			ColonistsCoinsLid.stl
 		Places:
-			PlacePileTest.stl
-			ColonistsPlacePileBox.stl
 			Lid (copy from ClankSetupTokenBoxMarkIILid.scad)
 		Storage facilities:
 			ColonistsStorageFacilityBox.stl 
