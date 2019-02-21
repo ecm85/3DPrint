@@ -433,13 +433,11 @@ the colonists
 		embassies:
 		other buildings:
 		Coins:
-			ColonistsCoins.stl
 			ColonistsCoinsLid.stl
 		Places:
 			Lid (copy from ClankSetupTokenBoxMarkIILid.scad)
 		Storage facilities:
-			ColonistsStorageFacilityBox.stl 
-			EzraBoxLid115x115WithLip5x2WithNotches.stl
+			EzraBoxLid115x115WithLip5x1WithNotches.stl
 	design:
 		places lid
 		tools
