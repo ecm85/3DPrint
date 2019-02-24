@@ -1,7 +1,7 @@
-module LeftPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount){
+module LeftPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount, openingSizePercent = .75){
     pileHeight = (pileCount * singlePileHeight) + .5;
-    lengthOpeningSize = singlePileLength * .75;
-    widthOpeningSize = singlePileWidth * .75;
+    lengthOpeningSize = singlePileLength * openingSizePercent;
+    widthOpeningSize = singlePileWidth * openingSizePercent;
     blockerSize = (singlePileWidth - widthOpeningSize) / 2;
     
     translate([wallThickness, wallThickness, totalHeight - pileHeight])
@@ -10,19 +10,19 @@ module LeftPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, s
         cube([wallThickness + lengthOpeningSize, widthOpeningSize, totalHeight]);
 }
 
-module RightPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount){
+module RightPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount, openingSizePercent = .75){
     translate([0, wallThickness + wallThickness + singlePileWidth, 0])
         rotate([0, 0, 180])
             LeftPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount);
 }
 
-module BottomPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount){
+module BottomPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount, openingSizePercent = .75){
     translate([wallThickness + wallThickness + singlePileWidth, 0, 0])
         rotate([0, 0, 90])
             LeftPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount);
 }
 
-module TopPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount){
+module TopPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount, openingSizePercent = .75){
         rotate([0, 0, 270])
             LeftPile(wallThickness, totalHeight, singlePileHeight, singlePileWidth, singlePileLength, pileCount);
 }

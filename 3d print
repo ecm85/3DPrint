@@ -433,11 +433,9 @@ the colonists
 		embassies:
 		other buildings:
 		Coins:
-			ColonistsCoinsLid.stl
 		Places:
 			Lid (copy from ClankSetupTokenBoxMarkIILid.scad)
 		Storage facilities:
-			EzraBoxLid115x115WithLip5x1WithNotches.stl
 	design:
 		places lid
 		tools
@@ -544,6 +542,9 @@ the colonists
 		1 Basic storage upgrade 59.85 by 19.70 by 2.10
 	tools
 		20 1x, 20 3x
+		Tools 
+		Ones 21.15 x 10.53
+		Threes 19.30x24.23
 	coins
 		Ones diameter 17.25
 		Fives diameter 21.35

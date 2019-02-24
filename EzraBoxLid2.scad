@@ -1,9 +1,9 @@
-length = 115;
-width = 115;
+length = 47;
+width = 72;
 
 height = 3;
 rimHeight = 5;
-rimThickness = 1;
+rimThickness = 2;
 notchLength = 25;
 //Based on washer size:
 washerDiameter = 16.25;
