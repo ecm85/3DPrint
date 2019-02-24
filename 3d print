@@ -427,23 +427,11 @@ pursuit of happiness:
 		meeple 16.14 height, 16.36 x 10.31
 
 the colonists
-	to print:
-		Goods:
-		Residences:
-		embassies:
-		other buildings:
-		Coins:
-		Places:
-			Lid (copy from ClankSetupTokenBoxMarkIILid.scad)
-		Storage facilities:
-	design:
-		places lid
-		tools
-		per player
+	design and print:
+		places lid (copy from ClankSetupTokenBoxMarkIILid.scad)
 		colonists
+		stewards
 		misc
-	measure:
-		measure tools
 	residences
 		25.82 by 32.82 by 2.13
 		32 farm/estate - 8x4
