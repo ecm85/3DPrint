@@ -23,11 +23,11 @@ difference(){
 
     cube([length, width, height]);
     
-    translate([0, wallThickness, height - offset])
+    translate([wallThickness, wallThickness, height - offset])
         rotate([0, angle, 0])
-            cube([length + 1, width - wallThickness * 2, height + offset]);
+            cube([length + wallThickness, width - wallThickness * 2, height]);
     
-    translate([2, diameter/2 + wallThickness, height - offset + 1 ])
+    translate([wallThickness, diameter/2 + wallThickness, height - offset + 1 ])
         rotate([90 + angle, 0, 90])
             cylinder(length + 3, d=diameter);
     translate([centerOfConnectorX, washerHeight, centerOfConnectorY])
