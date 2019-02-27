@@ -555,5 +555,21 @@ the colonists
 		Starting player marker 25.8. By 32.99 by 2.11
 		Market double hex top to top 38.1 by 2.12 
 
+potion explosion
+	marble 16.28
+	main box
+		exposed part: 143 x 141
+		covered part: 127 x 141
+	printable diagonal length:
+		169
+		width of single track = 2 + 2 + 16.28 = 20.28
+		max length = 170 - 20.28 = 148.72, round down to 145
+
+	single track:
+
+
+
+
+
 Caverna
 	TODO
