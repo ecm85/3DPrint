@@ -8,6 +8,7 @@ echo(height);
 washerDiameter = 16.25;
 washerHeight = 1.4;
 washerHeightOffset = 1;
+backWasherDiameter = washerDiameter + .3;
 magnetHeightOffset = 1;
 magnetBaseInnerDiameter = 15.4;
 magnetHeight = 4.0;
@@ -34,5 +35,5 @@ difference(){
             cylinder(magnetHeight, d=magnetBaseInnerDiameter);
     translate([0, centerOfBackConnectorX, centerOfConnectorY])
         rotate([90, 0, 90])
-            cylinder(washerHeight, d=washerDiameter);
+            cylinder(washerHeight, d=backWasherDiameter);
 }
