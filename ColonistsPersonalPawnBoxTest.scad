@@ -5,8 +5,7 @@ protrusionHeight = 15;
 
 
 length = 25;
-width = 25;
-floorHeight = 3;
+width = 25;floorHeight = 3;
 height = (personalPawnHeight - protrusionHeight) + floorHeight;
 totalHeight = height + protrusionHeight;
 magnetPadding = 15;
