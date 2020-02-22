@@ -1,5 +1,6 @@
-length = 71.92;
-width = 69.72;
+lipThickness = 2;
+length = 100 + lipThickness * 2;
+width = 100 + lipThickness * 2;
 height = 3;
 rimHeight = 5;
 rimThickness = 2;

@@ -573,3 +573,31 @@ potion explosion
 
 Caverna
 	TODO
+
+card holder
+box width 286 length 286
+dividers 68 by 97
+divider "height" = 45
+max length = 170 - 45 = 125, do 120
+120 x 45 x 4, 20mm of which is overlap (10 on each side)
+2 of them = 100 + 100 + 10, + 10 + 10 = 210 full, 20 half
+
+120^2 = 
+
+101 = 5 + 5 + x + 20 = 101 - 30 = 71
+
+left to print:
+4 corners
+2 71's
+2 54's
+
+long side = 2 100's + 1 54
+short side = 1 71
+
+changes to make
+
+1. should be 1mm shorter total length (bridge piece was 54, make 53)
+2. should be using correct dimension for width (97 not 68)
+2b. should have 2mm less slack for width (old was 71 (68 + 3) + 2 from corners = 73, new should be 97 + 1 = 98
+4. add notches (long pieces are outies, bridge pieces + corners are innies
+
