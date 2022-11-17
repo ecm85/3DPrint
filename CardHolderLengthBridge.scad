@@ -1,18 +1,28 @@
-$fn=50;
+length = 75;
+width = 45;
+height = 3;
+lipHeight = 1;
+lipLength = 10;
+protrusionHeight = 1;
+protrusionRadius = 4.2;
+protrusionWidthOffset = width / 3;
+protrusionLengthOffset = lipLength / 2;
+
+$fn=6;
 union() {
     difference() {
-        cube([45,53,4]);
-        translate([0, 0, 2])
-            cube([45, 10, 2]);
-        translate([0, 53 - 10, 2])
-            cube([45, 10, 2]);
-        translate([10, 6.25, 1])
-            cylinder(r=2.5,h=3);
-        translate([(45 - 10), 6.25, 1])
-            cylinder(r=2.5,h=3);
-        translate([10, 53 - 6.25, 1])
-            cylinder(r=2.5,h=3);
-        translate([(45 - 10), 53 - 6.25, 1])
-            cylinder(r=2.5,h=3);
+        cube([width, length, height]);
+        translate([0, 0, height - lipHeight])
+            cube([width, lipLength, lipHeight]);
+        translate([0, length - lipLength, height - lipHeight])
+            cube([width, lipLength, lipHeight]);
+        translate([protrusionWidthOffset, protrusionLengthOffset, lipHeight])
+            cylinder(r=protrusionRadius, h=protrusionHeight);
+        translate([(width - protrusionWidthOffset), protrusionLengthOffset, lipHeight])
+            cylinder(r=protrusionRadius, h=protrusionHeight);
+        translate([protrusionWidthOffset, length - protrusionLengthOffset, lipHeight])
+            cylinder(r=protrusionRadius, h=protrusionHeight);
+        translate([(width - protrusionWidthOffset), length - protrusionLengthOffset, lipHeight])
+            cylinder(r=protrusionRadius, h=protrusionHeight);
     };
 };

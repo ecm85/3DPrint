@@ -1,6 +1,6 @@
-length = 100;
-width = 100;
-height = 25;
+length = 105;
+width = 105;
+height = 20;
 wallThickness = 2;
 floorThickness = 3;
 widthDividers = 1;
@@ -14,7 +14,15 @@ magnetHeight = 4.0;
 
 
 difference(){
-    cube([length, width, height]);
+    union(){
+            $fn=50;
+            minkowski()
+            {
+              translate([2,2,0])
+                cube([length-4, width-4, height - 1]);
+              cylinder(r=2,h=1);
+            }
+        }
     translate([wallThickness, wallThickness, floorThickness])
         cube([length - wallThickness * 2,width - wallThickness * 2, height - floorThickness]);
 }
