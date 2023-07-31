@@ -1,6 +1,6 @@
 lipThickness = 2;
-length = 90;
-width = 110;
+width = 152;
+length = 195;
 height = 3;
 rimHeight = 5;
 rimThickness = 2;
