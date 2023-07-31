@@ -2,10 +2,10 @@ lipHeight = 3;
 lipLength = 10;
 height = 6;
 //length = height + 10 * 2 + lipLength * 2;
-length = 98;
+length = 100;
 width = 65;
 protrusionHeight = 2;
-protrusionRadius = 4;
+protrusionRadius = 4 + .2;
 protrusionWidthOffset = width / 3;
 protrusionLengthOffset = lipLength / 2;
 
