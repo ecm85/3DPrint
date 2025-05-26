@@ -1,11 +1,13 @@
-length = 105;
-width = 105;
-height = 20;
+length = 167;
+height = 35 - (22 + 3);
 wallThickness = 2;
 floorThickness = 3;
-widthDividers = 1;
-lengthDividers = 2;
+widthDividers = 0;
+lengthDividers = 1;
 widthDividerToSkip = -1;
+rimThickness = 2;
+rimPadding = 1.5;
+width = 60;
 
 //Based on magnet size:
 magnetBaseOuterDiameter = 18;
@@ -35,6 +37,11 @@ difference() {
                 if (index != widthDividerToSkip)
                     translate([0, (width/widthSections) * index - (wallThickness/2), 0])
                         cube([length, wallThickness, height]);
+//        translate([0, (3*width/5) - (wallThickness/2), 0])
+//            cube([length/2, wallThickness, height]);
+//        translate([length/2, (2*width/5) - (wallThickness/2), 0])
+//            cube([length/2, wallThickness, height]);
+
         if(lengthDividers>0)
             for(index=[1:lengthDividers])
                 translate([ (length/lengthSections) * index - (wallThickness/2), 0, 0])

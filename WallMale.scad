@@ -1,7 +1,7 @@
 lipHeight = 3;
 lipLength = 10;
 height = 6;
-length = 42.85;
+length = 79;
 width = 65;
 protrusionHeight = 2;
 protrusionRadius = 4;

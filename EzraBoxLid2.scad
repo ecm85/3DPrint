@@ -1,15 +1,19 @@
 lipThickness = 2;
-width = 152;
-length = 195;
+rimPadding = 1.5;
+rimThickness = 2;
+length = 167;
+width = 60;
 height = 3;
 rimHeight = 5;
-rimThickness = 2;
+
 notchLength = 0;
 //Based on washer size:
 washerDiameter = 16.25;
 washerHeight = 1.4;
-rimPadding = 1.5;
+
 totalHeight = height + rimHeight;
+
+remainder = 5;
 
 totalLength = length + rimThickness * 2 + rimPadding;
 echo(totalLength);
@@ -71,7 +75,18 @@ difference() {
         cube([rimThickness + .01, notchLength, totalHeight]);
     translate([totalLength-rimThickness + 1.99, totalWidth/2 - notchLength/2, 0])
         cube([rimThickness + .01, notchLength, totalHeight]);
-    
+        
+//    translate([remainder,0,height])
+//        cube([totalLength - remainder * 2, rimThickness + 1, rimHeight]);
+//    translate([remainder,totalWidth - (rimThickness + 1),height])
+//        cube([totalLength - remainder * 2, rimThickness + 1, rimHeight]);
+//        
+//    translate([0,remainder,height])
+//        cube([rimThickness + 1, totalWidth - remainder * 2, rimHeight]);
+//    translate([totalLength - (rimThickness + 1),remainder,height])
+//        cube([rimThickness + 1, totalWidth - remainder * 2, rimHeight]);
+        
     translate([totalLength/2, totalWidth/2, height - washerHeight])
         cylinder(washerHeight, d=washerDiameter);
 }
+
